@@ -6,7 +6,7 @@ function setup(){
 function draw(){
     fill(255, 0, 0);
     ellipse(300,200,200,200);
-    rect(150,100,300,100)
+    rect(150,10,300,500)
     
     // Todo: Challenge 3 Traffic Light
 }
