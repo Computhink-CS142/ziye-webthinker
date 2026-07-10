@@ -8,7 +8,7 @@ background("skyblue");
 function draw() {
   // Challenge 1: An eye using ellipse() function
 fill("blue")
-ellipse()
+ellipse(200)
 
   // Challenge 2: A face using circle() function
 
