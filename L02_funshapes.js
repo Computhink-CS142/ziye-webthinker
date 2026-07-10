@@ -14,7 +14,7 @@ function draw() {
 fill("blue")
 // circle(680,360,100,100)
 // circle(767,360,70,70)
-rect(767,360,)
+rect(767,360,200,200)
 
 
   // Challenge 3: A house using rect() function
