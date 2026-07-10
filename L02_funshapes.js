@@ -11,12 +11,12 @@ function draw() {
 // ellipse(100,200,0,0);
 
 
-fill("blue")
-// circle(680,360,100,100)
-// circle(767,360,70,70)
-rect(500,120,100,100)
-fill("green")
-rect(500,120,500,500)
+// fill("blue")
+// // circle(680,360,100,100)
+// // circle(767,360,70,70)
+// rect(500,120,100,100)
+// fill("green")
+// rect(500,120,500,500)
 
   // Challenge 3: A house using rect() function
 
