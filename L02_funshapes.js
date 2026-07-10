@@ -3,10 +3,9 @@ Task 1: Add the setup() function
 */
 function setup(){
 createCanvas(1000,1000)
-background("");
+background("skyblue");
 }
 function draw() {
-
   // Challenge 1: An eye using ellipse() function
 fill("blue")
 ellipse
