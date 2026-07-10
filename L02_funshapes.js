@@ -18,7 +18,7 @@ function draw() {
 // fill("green")
 // rect(500,120,500,500)
 fill("blue")
-triangle(700,400,800,400,)
+triangle(700,400,800,400,750,200)
   // Challenge 3: A house using rect() function
 
   // Challenge 4: A rocketship using triangle() function
