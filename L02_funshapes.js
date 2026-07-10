@@ -15,9 +15,7 @@ fill("blue")
 // circle(680,360,100,100)
 // circle(767,360,70,70)
 rect(500,120,500,500)
-fill("blue")
-rect(500,120,500,500)
-rect(500,120,500,500)
+
   // Challenge 3: A house using rect() function
 
   // Challenge 4: A rocketship using triangle() function
