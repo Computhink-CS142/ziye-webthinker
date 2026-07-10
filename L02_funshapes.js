@@ -12,8 +12,9 @@ function draw() {
 
   // Challenge 2: A face using circle() function
 fill("blue")
-ellipse(767,360,50,50)
 ellipse(710,360,100,100)
+ellipse(767,360,50,50)
+
   // Challenge 3: A house using rect() function
 
   // Challenge 4: A rocketship using triangle() function
