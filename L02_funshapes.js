@@ -8,11 +8,11 @@ background("skyblue");
 function draw() {
   // Challenge 1: An eye using ellipse() function
 // fill("blue")
-// ellipse(100,200,0,200);
+// ellipse(100,200,0,0);
 
   // Challenge 2: A face using circle() function
 // fill("blue")
-// ellipse(200,200,200,200)
+// ellipse(200,200,0,0)
   // Challenge 3: A house using rect() function
 
   // Challenge 4: A rocketship using triangle() function
