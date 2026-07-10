@@ -6,14 +6,16 @@ createCanvas(1534,720)
 background("skyblue");
 }
 function draw() {
-  // Challenge 1: An eye using ellipse() function
+
 // fill("blue")
 // ellipse(100,200,0,0);
 
-  // Challenge 2: A face using circle() function
+
 // fill("blue")
 // circle(680,360,100,100)
 // circle(767,360,70,70)
+
+
 
   // Challenge 3: A house using rect() function
 
