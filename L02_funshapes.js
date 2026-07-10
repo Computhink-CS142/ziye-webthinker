@@ -40,7 +40,7 @@ let ballSpeedY = 0;
 let ballSize = 10;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1900, 1900);
 
   // Draw rectangles from their center
   // This makes it easier to check whether the ball is above or below the
