@@ -2,7 +2,7 @@
 Task 1: Add the setup() function
 */
 function setup(){
-createCanvas(1920,10800)
+createCanvas(1920,1080)
 background("skyblue");
 }
 function draw() {
@@ -12,7 +12,7 @@ function draw() {
 
   // Challenge 2: A face using circle() function
 fill("blue")
-ellipse(200,200,0,0)
+ellipse(200,200,50,50)
   // Challenge 3: A house using rect() function
 
   // Challenge 4: A rocketship using triangle() function
