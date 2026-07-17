@@ -7,18 +7,14 @@ background("skyblue");
 }
 function draw() {
 
-// fill("blue")
-// ellipse(100,200,0,0);
-
-
-// fill("blue")
-// // circle(680,360,100,100)
-// // circle(767,360,70,70)
-// rect(500,120,100,100)
-// fill("green")
-// rect(500,120,500,500)
-fill("blue")
-triangle(700,200,800,200,750,200)
+fill("lightgrey")
+ ellipse(767,360,200,400);
+fill("red")
+rect(667,500,200,100)
+fill("lightblue")
+circle(767,360,100)
+fill("red")
+triangle(700,500,500,500,450,450)
   // Challenge 3: A house using rect() function
 
   // Challenge 4: A rocketship using triangle() function
