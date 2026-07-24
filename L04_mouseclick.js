@@ -29,7 +29,10 @@ function setup() {
 // function mouseReleased(){
 //         shapeColor=color(255);
 //     }
-fu
+function mouseMoved(){
+    
+}
+
 
 
 
