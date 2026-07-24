@@ -3,9 +3,9 @@ function setup() {
     background("Blue")
 }
 
-let i=767
+let x=767
 function draw(){
-    for(let i= 0;i<5;i++){
+    for(let x= 0;i<5;i++){
         Fill("skyblue")
         circle()
     }
