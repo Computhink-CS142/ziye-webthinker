@@ -3,7 +3,7 @@ function setup() {
     background("Blue")
 }
 
-let x1=767
+let x1=167
 let y1=369
 let colour=0
 
