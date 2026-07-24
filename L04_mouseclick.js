@@ -30,7 +30,7 @@ function setup() {
 //         shapeColor=color(255);
 //     }
 function mouseMoved(){
-    ellipse(mouseX)
+    ellipse(mouseX,mouseY,)
 }
 
 
