@@ -4,7 +4,7 @@ function setup() {
 }
 
 let x1=767
-le
+let
 function draw(){
     for(let x1= 0;x1<5;x1++){
         Fill("skyblue")
