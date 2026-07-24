@@ -5,7 +5,7 @@ function setup() {
 
 let x=767
 function draw(){
-    for(let x= 0;i<5;i++){
+    for(let x= 0;x<5;x++){
         Fill("skyblue")
         circle()
     }
