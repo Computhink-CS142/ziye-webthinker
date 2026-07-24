@@ -33,7 +33,7 @@ function setup() {
 //     ellipse(mouseX,mouseY,50,50)
 // }
 
-function mouseragged(){
+function mouseDragged(){
     ellipse(mouseX,mouseY,50,50)
 }
 
