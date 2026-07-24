@@ -22,6 +22,9 @@ function draw(){
     circle(767,361,500)
     
 }
+function mousePressed(){
+        shapeColor=color(random(255),random(255),random(255));
+    }
 
 function mouseReleased(){
         shapeColor=color(random(255),random(255),random(255));
