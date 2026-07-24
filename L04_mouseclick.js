@@ -18,7 +18,8 @@ function setup() {
 // }
 
 function draw(){
-    circle(767,361,100)
+    circle(767,361,500)
+    
 }
 
 
