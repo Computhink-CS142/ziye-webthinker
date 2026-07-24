@@ -5,6 +5,7 @@ function setup() {
 
 let x1=767
 let y1=363
+colour
 
 function draw(){
     for(let x1= 0;x1<5;x1++){
