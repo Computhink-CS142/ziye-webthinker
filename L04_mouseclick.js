@@ -32,7 +32,9 @@ function setup() {
 function mouseMoved(){
     ellipse(mouseX,mouseY,50,50)
 }
-function mouseDragged(){}
+function mouseDragged(){
+
+}
 
 
 
