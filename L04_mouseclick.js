@@ -16,7 +16,7 @@ function setup() {
 //         colour+=50
 //     }
 // }
-
+shapeColor
 function draw(){
     circle(767,361,500)
     
