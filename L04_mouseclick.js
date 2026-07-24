@@ -20,7 +20,7 @@ function setup() {
 function draw(){
     circle(767,361,500)
     function mouseReleased(){
-        shapeColor=color(random)
+        shapeColor=color(random(255),)
     }
 }
 
