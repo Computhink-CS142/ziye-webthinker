@@ -4,7 +4,7 @@ function setup() {
 }
 
 let x1=767
-let y1=769
+let y1=369
 let colour=0
 
 function draw(){
