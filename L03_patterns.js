@@ -15,12 +15,12 @@ function draw() {
 // }
   // Recap 1: Repeating Circles
 
-  for(let blue=0;red<256;red+=35 ){
-    fill(0,0,red);
-    circle(x*50)
-  }
-}
-  }
+//   for(let blue=0;red<256;red+=35 ){
+//     fill(0,0,red);
+//     circle(x*50)
+//   }
+// }
+//   }
   // Task 1: Colour Gradient
 
   // Task 2: Colour Loop
