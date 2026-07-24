@@ -29,10 +29,12 @@ function setup() {
 // function mouseReleased(){
 //         shapeColor=color(255);
 //     }
+// function mouseMoved(){
+//     ellipse(mouseX,mouseY,50,50)
+// }
+
 function mouseMoved(){
     ellipse(mouseX,mouseY,50,50)
 }
-
-
 
 
