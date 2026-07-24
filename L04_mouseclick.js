@@ -29,11 +29,11 @@ function setup() {
 // function mouseReleased(){
 //         shapeColor=color(255);
 //     }
-// function mouseMoved(){
+// function mouseragged(){
 //     ellipse(mouseX,mouseY,50,50)
 // }
 
-function mouseMoved(){
+function mouseragged(){
     ellipse(mouseX,mouseY,50,50)
 }
 
