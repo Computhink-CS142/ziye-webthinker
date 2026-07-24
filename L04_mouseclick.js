@@ -23,7 +23,7 @@ function draw(){
     
 }
 
-function mousePressed(){
+function mouseRealesed(){
         shapeColor=color(random(255),random(255),random(255));
     }
 
