@@ -16,20 +16,20 @@ function setup() {
 //         colour+=50
 //     }
 // }
-shapeColor=0
-function draw(){
-    fill(shapeColor)
-    circle(767,361,500)
+// shapeColor=0
+// function draw(){
+//     fill(shapeColor)
+//     circle(767,361,500)
     
-}
-function mousePressed(){
-        shapeColor=color(random(255),random(255),random(255));
-    }
+// }
+// function mousePressed(){
+//         shapeColor=color(random(255),random(255),random(255));
+//     }
 
-function mouseReleased(){
-        shapeColor=color(255);
-    }
-
+// function mouseReleased(){
+//         shapeColor=color(255);
+//     }
+v
 
 
 
