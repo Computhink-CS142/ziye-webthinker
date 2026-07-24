@@ -30,7 +30,9 @@ function setup() {
 //         shapeColor=color(255);
 //     }
 shapeColor=0
-function draw(){}
+function draw(){
+    
+}
     
 
 
