@@ -1,7 +1,7 @@
-// function setup() {
-//     createCanvas(1534, 727);
-//     background("Blue")
-// }
+function setup() {
+    createCanvas(1534, 727);
+    background("Blue")
+}
 
 // let x1=167
 // let y1=369
