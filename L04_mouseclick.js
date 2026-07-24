@@ -18,6 +18,7 @@ function setup() {
 // }
 shapeColor=0
 function draw(){
+    fill(shapeColor)
     circle(767,361,500)
     
 }
