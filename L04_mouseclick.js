@@ -19,7 +19,9 @@ function setup() {
 
 function draw(){
     circle(767,361,500)
-    funtion
+    function mouseReleased(){
+        shape
+    }
 }
 
 
