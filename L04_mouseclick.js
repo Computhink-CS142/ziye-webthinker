@@ -13,7 +13,7 @@ function draw(){
         circle(x1,y1,100)
         x1+=50
         y1+=50
-        colour
+        colour+=50
     }
 }
 
