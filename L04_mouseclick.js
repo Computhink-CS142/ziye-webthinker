@@ -23,11 +23,11 @@ function draw(){
     
 }
 function mousePressed(){
-        shapeColor=color(255);
+        shapeColor=color(random(255),random(255),random(255));
     }
 
 function mouseReleased(){
-        shapeColor=color(random(255),random(255),random(255));
+        shapeColor=color(255);
     }
 
 
