@@ -1,6 +1,7 @@
 function setup() {
     createCanvas(1534, 727);
     background("Blue")
+    nostrok
 }
 
 // let x1=767
