@@ -29,7 +29,9 @@ function setup() {
 // function mouseReleased(){
 //         shapeColor=color(255);
 //     }
-v
+shapeColor=0
+function draw(){}
+    
 
 
 
