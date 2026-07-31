@@ -4,5 +4,6 @@ function setup() {
     noStroke();
 }
 function draw(){
-    background("")
+    background("light blue")
+    Re
 }
