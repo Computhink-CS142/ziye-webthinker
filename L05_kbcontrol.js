@@ -3,3 +3,6 @@ function setup() {
     background("Blue")
     noStroke();
 }
+function draw(){
+    
+}
