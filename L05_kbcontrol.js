@@ -5,5 +5,5 @@ function setup() {
 }
 function draw(){
     background("light blue")
-    rect()
+    rect(15,15,15,15)
 }
