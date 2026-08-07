@@ -2,7 +2,7 @@ let picoImg;
 let sounndSFX
 function preload(){
     picoImg=loadImage('assets/pico-a.png');
-    soundSFX=loadSound(assets/star_wars_theme_8_bit.mp3)
+    soundSFX=loadSound(assets/star_wars_theme_8_bit.mp3.png)
 }
 
 let x;
