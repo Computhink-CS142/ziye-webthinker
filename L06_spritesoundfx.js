@@ -34,6 +34,6 @@ function draw(){
     else if (keyIsDown(LEFT_ARROW)){
         x=x-40;
     }
-    x=constrain(x,0,1450)
-    y=constrain(y,0,690)
+    x=constrain(x,0,1500)
+    y=constrain(y,0,700)
 }
