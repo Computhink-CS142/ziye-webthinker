@@ -18,6 +18,6 @@ function draw(){
         y=y+5;
     }
     else if (keyIsDown(LEFT_ARROW)){
-        y=X-5;
+        y=y-5;
     }
 }
