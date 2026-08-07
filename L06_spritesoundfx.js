@@ -12,5 +12,4 @@ function draw(){
         Y=Y+5
     if (keyIsDown(DOWN_ARROW))
         Y=Y-5
-    
 }
