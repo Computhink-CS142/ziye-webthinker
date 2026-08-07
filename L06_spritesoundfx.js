@@ -11,6 +11,8 @@ function setup() {
     y = height/2;
 }
 function draw(){
+    background("Blue")
+
     fill("lightblue")
     rect(x,y,50,50)
     
