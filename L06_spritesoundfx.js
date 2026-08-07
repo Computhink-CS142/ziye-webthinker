@@ -3,8 +3,8 @@ let soundSFX
 let Bgm
 function preload(){
     picoImg=loadImage('assets/pico-a.png');
-    soundSFX=loadSound(assets/star_wars_theme_8_bit.mp3.png)
-    Bgm=loadSound(assets/star_wars_theme_8_bit.mp3.png)
+    soundSFX=loadSound('assets/star_wars_theme_8_bit.mp3.png');
+    Bgm=loadSound('assets/star_wars_theme_8_bit.mp3.png');
 
 }
 
