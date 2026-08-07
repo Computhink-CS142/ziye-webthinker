@@ -7,8 +7,8 @@ function preload(){
 // let y;
 
 function setup() {
-    createCanvas(1534, 727);
-    background("Blue")
+    createCanvas(200, 727);
+    background("Blue");
     // rectMode(CENTER);
     // x = width/2;
     // y = height/2;
