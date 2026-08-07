@@ -23,10 +23,10 @@ function draw(){
         y=y+100;
     }
     else if (keyIsDown(RIGHT_ARROW)){
-        x=x+100;
+        x=x+80;
     }
     else if (keyIsDown(LEFT_ARROW)){
-        x=x-100;
+        x=x-80;
     }
     x=constrain(x,0,1534)
     y=constrain(y,0,727)
