@@ -5,5 +5,5 @@ function setup() {
 function draw(){
     fill("lightblue")
     rect(0,0,50,50)
-    rectMode(CENTRE)
+    rectMode(CENTER)
 }
