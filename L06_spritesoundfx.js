@@ -7,7 +7,7 @@ let x;
 let y;
 
 function setup() {
-    createCanvas(1500, 727);
+    createCanvas(1534, 727);
     background("Blue");
     // rectMode(CENTER);
     x = width/2;
@@ -34,6 +34,6 @@ function draw(){
     else if (keyIsDown(LEFT_ARROW)){
         x=x-80;
     }
-//     x=constrain(x,0,1534)
-//     y=constrain(y,0,727)
+//     x=constrain(x,0,1500)
+//     y=constrain(y,0,700)
 }
