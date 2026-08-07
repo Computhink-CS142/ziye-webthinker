@@ -40,6 +40,6 @@ function draw(){
 }
 function keyPressed(){
     if (KeyCode===32){
-        soundSFX,play
+        soundSFX,play();
     }
 }
