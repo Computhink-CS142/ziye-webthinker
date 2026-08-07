@@ -32,13 +32,15 @@ function draw(){
     }        
     else if (keyIsDown(DOWN_ARROW)){
         y=y+40;
-        
+        Bgm.loop();
     }
     else if (keyIsDown(RIGHT_ARROW)){
         x=x+40;
+        Bgm.loop();
     }
     else if (keyIsDown(LEFT_ARROW)){
         x=x-40;
+        Bgm.loop();
     }
     x=constrain(x,0,1500)
     y=constrain(y,0,727)
