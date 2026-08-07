@@ -13,7 +13,7 @@ function setup() {
     // x = width/2;
     // y = height/2;
     noStroke();
-    Image()
+    Image(picoImg,)
 }
 // function draw(){
 //     background("Blue")
