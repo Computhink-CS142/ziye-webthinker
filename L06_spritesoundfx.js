@@ -26,13 +26,13 @@ function draw(){
         y=y-60;
     }        
     else if (keyIsDown(DOWN_ARROW)){
-        y=y+60;
+        y=y+40;
     }
     else if (keyIsDown(RIGHT_ARROW)){
-        x=x+60;
+        x=x+40;
     }
     else if (keyIsDown(LEFT_ARROW)){
-        x=x-60;
+        x=x-40;
     }
     x=constrain(x,0,1450)
     y=constrain(y,0,690)
