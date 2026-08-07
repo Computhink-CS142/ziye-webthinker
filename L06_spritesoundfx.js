@@ -38,3 +38,6 @@ function draw(){
     x=constrain(x,0,1500)
     y=constrain(y,0,727)
 }
+function keyPressed(){
+    
+}
