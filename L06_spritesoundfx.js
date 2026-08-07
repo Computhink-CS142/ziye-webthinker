@@ -5,5 +5,5 @@ function setup() {
 }
 function draw(){
     fill("lightblue")
-    rect(width/2,0,50,50)
+    rect(width/2,height/2,50,50)
 }
