@@ -9,5 +9,5 @@ function draw(){
     x=constrain(x,0,1534)
     y=constrain(y,0,727)
     if (keyIsDown(UP_ARROW))
-        X
+        Y=Y+5
 }
