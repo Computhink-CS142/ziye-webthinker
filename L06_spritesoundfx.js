@@ -20,13 +20,13 @@ function draw(){
         y=y-500;
     }        
     else if (keyIsDown(DOWN_ARROW)){
-        y=y+500;
+        y=y+100;
     }
     else if (keyIsDown(RIGHT_ARROW)){
-        x=x+500;
+        x=x+100;
     }
     else if (keyIsDown(LEFT_ARROW)){
-        x=x-500;
+        x=x-100;
     }
     x=constrain(x,0,1534)
     y=constrain(y,0,727)
