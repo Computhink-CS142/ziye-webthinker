@@ -1,14 +1,14 @@
 function preload(){}
 
-let x;
-let y;
+// let x;
+// let y;
 
 function setup() {
     createCanvas(1534, 727);
     background("Blue")
-    rectMode(CENTER);
-    x = width/2;
-    y = height/2;
+    // rectMode(CENTER);
+    // x = width/2;
+    // y = height/2;
 }
 // function draw(){
 //     background("Blue")
