@@ -22,8 +22,7 @@ function draw(){
     image(picoImg,x,y,110,133);
     // fill("light blue")
 
-//     rect(x,y,50,50
-    
+//     rect(x,y,50,50)
     if (keyIsDown(UP_ARROW)){
         y=y-40;
     }        
