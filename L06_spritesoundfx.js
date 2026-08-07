@@ -7,5 +7,5 @@ function draw(){
     fill("lightblue")
     rect(width/2,height/2,50,50)
     x=constrain(x,0,1534)
-    
+    y=constrain(x,0,1534)
 }
