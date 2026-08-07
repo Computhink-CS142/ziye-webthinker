@@ -14,6 +14,6 @@ function draw(){
         Y=Y-5
     if (keyIsDown(RIGHT_ARROW))
         X=X+5
-    if (keyIsDown(LEFT_ARROW))
+    else if (keyIsDown(LEFT_ARROW))
         X=X-5
 }
