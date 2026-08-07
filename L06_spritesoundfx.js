@@ -17,10 +17,10 @@ function draw(){
     rect(x,y,50,50)
     
     if (keyIsDown(UP_ARROW)){
-        y=y-100;
+        y=y-1000;
     }        
     else if (keyIsDown(DOWN_ARROW)){
-        y=y+100;
+        y=y+1000;
     }
     else if (keyIsDown(RIGHT_ARROW)){
         x=x+100;
