@@ -35,5 +35,5 @@ function draw(){
         x=x-40;
     }
     x=constrain(x,0,1500)
-    y=constrain(y,0,700)
+    y=constrain(y,0,727)
 }
