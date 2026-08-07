@@ -28,10 +28,11 @@ function draw(){
 //     rect(x,y,50,50)
     if (keyIsDown(UP_ARROW)){
         y=y-40;
-        
+        Bgm.loop();
     }        
     else if (keyIsDown(DOWN_ARROW)){
         y=y+40;
+        
     }
     else if (keyIsDown(RIGHT_ARROW)){
         x=x+40;
