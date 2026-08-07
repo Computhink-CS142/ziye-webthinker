@@ -1,7 +1,11 @@
+
+
 function setup() {
     createCanvas(1534, 727);
     background("Blue")
-    rectMode(CENTER)
+    rectMode(CENTER);
+    x = width/2;
+    y = height/2;
 }
 function draw(){
     fill("lightblue")
