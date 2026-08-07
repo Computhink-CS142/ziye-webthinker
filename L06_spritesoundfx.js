@@ -10,9 +10,9 @@ function draw(){
     y=constrain(y,0,727)
     if (keyIsDown(UP_ARROW))
         Y=Y+5
-    if (keyIsDown(DOWN_ARROW))
+    else if (keyIsDown(DOWN_ARROW))
         Y=Y-5
-    if (keyIsDown(RIGHT_ARROW))
+    else if (keyIsDown(RIGHT_ARROW))
         X=X+5
     else if (keyIsDown(LEFT_ARROW))
         X=X-5
