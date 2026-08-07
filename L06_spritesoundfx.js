@@ -23,13 +23,13 @@ function draw(){
 //     rect(x,y,50,50)
     
     if (keyIsDown(UP_ARROW)){
-        y=y-80;
+        y=y-60;
     }        
     else if (keyIsDown(DOWN_ARROW)){
-        y=y+80;
+        y=y+60;
     }
     else if (keyIsDown(RIGHT_ARROW)){
-        x=x+80;
+        x=x+60;
     }
     else if (keyIsDown(LEFT_ARROW)){
         x=x-80;
