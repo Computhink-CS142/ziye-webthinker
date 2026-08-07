@@ -1,4 +1,5 @@
 let picoImg;
+let 
 function preload(){
     picoImg=loadImage('assets/pico-a.png');
 }
@@ -35,5 +36,5 @@ function draw(){
         x=x-40;
     }
     x=constrain(x,0,1500)
-    // y=constrain(y,0,727)
+    y=constrain(y,0,727)
 }
