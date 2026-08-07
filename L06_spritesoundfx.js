@@ -8,5 +8,9 @@ function draw(){
     rect(width/2,height/2,50,50)
     x=constrain(x,0,1534)
     y=constrain(y,0,727)
-    CZZZ
+    if (keyIsDown(UP_ARROW))
+        Y=Y+5
+    if (keyIsDown(DOWN_ARROW))
+        Y=Y-5
+    
 }
