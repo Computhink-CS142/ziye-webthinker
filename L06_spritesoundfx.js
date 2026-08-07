@@ -3,6 +3,5 @@ function setup() {
     background("Blue")
 }
 function draw(){
-    background("light blue")
     rect(100,150,150,150)
 }
