@@ -12,6 +12,7 @@ function setup() {
     // rectMode(CENTER);
     // x = width/2;
     // y = height/2;
+    no
 }
 // function draw(){
 //     background("Blue")
