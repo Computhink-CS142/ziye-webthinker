@@ -1,5 +1,7 @@
-let preload
-function preload(){}
+let picoImg;
+function preload(){
+    pico
+}
 
 // let x;
 // let y;
