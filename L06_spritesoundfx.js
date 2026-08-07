@@ -32,7 +32,7 @@ function draw(){
         x=x+60;
     }
     else if (keyIsDown(LEFT_ARROW)){
-        x=x-80;
+        x=x-60;
     }
     x=constrain(x,0,1450)
     y=constrain(y,0,690)
