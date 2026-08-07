@@ -16,7 +16,7 @@ function setup() {
     image(picoImg,width/2,height/2,110,133);
 }
 function draw(){
-    background("Blue")
+    // background("Blue")
     image(picoImg,x,y,110,133);
     // fill("light blue")
 
