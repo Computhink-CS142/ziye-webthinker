@@ -1,6 +1,6 @@
 let picoImg;
 function preload(){
-    pico
+    picoImg=loadiI
 }
 
 // let x;
