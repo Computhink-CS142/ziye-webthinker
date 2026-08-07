@@ -39,5 +39,7 @@ function draw(){
     y=constrain(y,0,727)
 }
 function keyPressed(){
-    
+    if (KeyCode===32){
+        
+    }
 }
