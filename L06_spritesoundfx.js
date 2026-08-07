@@ -17,16 +17,16 @@ function draw(){
     rect(x,y,50,50)
     
     if (keyIsDown(UP_ARROW)){
-        y=y-5;
+        y=y-50;
     }        
     else if (keyIsDown(DOWN_ARROW)){
-        y=y+5;
+        y=y+50;
     }
     else if (keyIsDown(RIGHT_ARROW)){
-        x=x+5;
+        x=x+50;
     }
     else if (keyIsDown(LEFT_ARROW)){
-        x=x-5;
+        x=x-50;
     }
     x=constrain(x,0,1534)
     y=constrain(y,0,727)
