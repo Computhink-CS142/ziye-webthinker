@@ -6,8 +6,7 @@ function setup() {
 function draw(){
     fill("lightblue")
     rect(width/2,height/2,50,50)
-    x=constrain(x,0,1534)
-    y=constrain(y,0,727)
+    
     if (keyIsDown(UP_ARROW)){
         y=y+5;
     }        
@@ -20,4 +19,6 @@ function draw(){
     else if (keyIsDown(LEFT_ARROW)){
         x=x-5;
     }
+    x=constrain(x,0,1534)
+    y=constrain(y,0,727)
 }
