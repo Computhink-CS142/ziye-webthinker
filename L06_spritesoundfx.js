@@ -12,12 +12,12 @@ function draw(){
         y=y+5;
     }        
     else if (keyIsDown(DOWN_ARROW)){
-        Y=Y-5;
+        y=y-5;
     }
     else if (keyIsDown(RIGHT_ARROW)){
-        X=X+5;
+        y=y+5;
     }
     else if (keyIsDown(LEFT_ARROW)){
-        X=X-5;
+        y=X-5;
     }
 }
