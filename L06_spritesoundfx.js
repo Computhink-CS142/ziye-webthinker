@@ -7,13 +7,13 @@ function preload(){
 // let y;
 
 function setup() {
-    createCanvas(140, 727);
+    createCanvas(1400, 727);
     background("Blue");
     // rectMode(CENTER);
     // x = width/2;
     // y = height/2;
     noStroke();
-    image(picoImg,height/2,width/2,110,133);
+    image(picoImg,width/2,height/2,110,133);
 }
 // function draw(){
 //     background("Blue")
