@@ -9,15 +9,15 @@ function draw(){
     x=constrain(x,0,1534)
     y=constrain(y,0,727)
     if (keyIsDown(UP_ARROW)){
-        Y=Y+5
+        Y=Y+5;
     }        
     else if (keyIsDown(DOWN_ARROW)){
-        Y=Y-5
+        Y=Y-5;
     }
     else if (keyIsDown(RIGHT_ARROW)){
-        X=X+5
+        X=X+5;
     }
     else if (keyIsDown(LEFT_ARROW)){
-        X=X-5
+        X=X-5;
     }
 }
