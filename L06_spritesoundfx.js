@@ -4,5 +4,5 @@ function setup() {
 }
 function draw(){
     fill("lightblue")
-    rect(0,0,500,500)
+    rect(0,0,50,50)
 }
