@@ -30,7 +30,7 @@ function setup(){
     x=width/2
 }
 function draw(){
-    let zour=nf(hour(),2)
+    let sour=nf(hour(),2)
     let zinute
     let zecond
 }
