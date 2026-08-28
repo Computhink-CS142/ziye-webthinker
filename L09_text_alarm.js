@@ -19,4 +19,6 @@ function setup(){
 //         speed=speed*-1
 // }
 // }
-
+function draw(){
+    
+}
