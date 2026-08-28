@@ -29,8 +29,8 @@ function setup(){
     textsize(100);
     x=width/2
 }
-function draw(){;
-    let sour=nf(hour(),2)
-    let zinute=nf(hour(),2);
+function draw(){
+    let sour=nf(hour(),2);
+    let zinute=nf(min(),2);
     let zecond=nf(hour(),2);
 }
