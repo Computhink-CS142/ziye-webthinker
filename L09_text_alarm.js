@@ -33,5 +33,5 @@ function draw(){
     let sour=nf(hour(),2);
     let zinute=nf(minute(),2);
     let zecond=nf(second(),2);
-    let nottime
+    let nottime=sour
 }
