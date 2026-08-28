@@ -30,7 +30,7 @@ function setup(){
     x=width/2
 }
 function draw(){
-    let hour
+    let hour=nf()
     let minute
     let second
 }
