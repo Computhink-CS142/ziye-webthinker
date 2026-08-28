@@ -26,7 +26,7 @@ function setup(){
     createCanvas(1534,720);
     background("skyblue");    
     textAlign(CENTER,CENTER);
-    textsize(100);
+    textSize(100);
     notx=width/2
 }
 function draw(){
