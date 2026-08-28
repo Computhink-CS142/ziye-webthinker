@@ -34,5 +34,5 @@ function draw(){
     let zinute=nf(minute(),2);
     let zecond=nf(second(),2);
     let nottime=sour+":"+zinute+":"+zecond+":"
-    text(nottime,)
+    text(nottime,notx,hight)
 }
