@@ -11,11 +11,11 @@
 // }
 // function draw(){
 //     text("bounce!",x,height);
-//     x=x+speed;
+//     notx=notx+speed;
 //     if (x>width) {
 //         speed=speed*-1
 //     }
-//      if (x>0) {
+//      if (notx>0) {
 //         speed=speed*-1
 // }
 // }
