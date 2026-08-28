@@ -18,7 +18,7 @@
       if (notx>0) {
          speed=speed*-1
  }
-// }
+ }
 // let notx
 
 
