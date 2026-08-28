@@ -4,7 +4,7 @@
 // function setup(){
 //     createCanvas(1534,720);
 //     background("skyblue");    
-//     textAline(RIGHT,CENTRE);
+//     textAlign(RIGHT,CENTRE);
 //     textsize(100);
 //     notx=width/2
 //     speed=50
