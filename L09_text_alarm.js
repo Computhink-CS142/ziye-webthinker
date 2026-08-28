@@ -25,7 +25,7 @@ let notx
 function setup(){
     createCanvas(1534,720);
     background("skyblue");    
-    textAline(CENTRE,CENTRE);
+    textAligne(CENTRE,CENTRE);
     textsize(100);
     notx=width/2
 }
