@@ -27,7 +27,7 @@ function setup(){
     background("skyblue");    
     textAline(RIGHT,CENTRE);
     textsize(100);
-    x=width/2
+    notx=width/2
 }
 function draw(){
     let sour=nf(hour(),2);
