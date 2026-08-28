@@ -1,4 +1,4 @@
-// let x
+// let notx
 // let speed
 
 // function setup(){
@@ -6,7 +6,7 @@
 //     background("skyblue");    
 //     textAline(RIGHT,CENTRE);
 //     textsize(100);
-//     x=width/2
+//     notx=width/2
 //     speed=50
 // }
 // function draw(){
