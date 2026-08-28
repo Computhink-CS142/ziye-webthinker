@@ -1,24 +1,24 @@
-// // let notx
-// // let speed
+ let notx
+ let speed
 
-// // function setup(){
-// //     createCanvas(1534,720);
-// //     background("skyblue");    
-// //     textAlign(RIGHT,CENTER);
-// //     textsize(100);
-// //     notx=width/2
-// //     speed=50
-// // }
-// // function draw(){
-// //     text("bounce!",x,height);
-// //     notx=notx+speed;
-// //     if (x>width) {
-// //         speed=speed*-1
-// //     }
-// //      if (notx>0) {
-// //         speed=speed*-1
-// // }
-// // }
+ function setup(){
+    createCanvas(1534,720);
+     background("skyblue");    
+     textAlign(RIGHT,CENTER);
+     textsize(100);
+     notx=width/2
+     speed=50
+ }
+ function draw(){
+     text("bounce!",x,height);
+     notx=notx+speed;
+     if (x>width) {
+         speed=speed*-1
+     }
+      if (notx>0) {
+         speed=speed*-1
+ }
+// }
 // let notx
 
 
