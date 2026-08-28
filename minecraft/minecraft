@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal 3D Voxel Engine</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: sans-serif;
+      user-select: none;
+    }
+    #crosshair {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      margin-top: -5px;
+      margin-left: -5px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 10px;
+      pointer-events: none;
+    }
+    #ui {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    #health-bar {
+      width: 200px;
+      height: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #fff;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    #health-fill {
+      width: 100%;
+      height: 100%;
+      background: #e74c3c;
+      transition: width 0.2s;
+    }
+    #hotbar {
+      display: flex;
+      gap: 5px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .slot {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #aaa;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px black;
+    }
+    .slot.active {
+      border-color: #fff;
+      box-shadow: 0 0 10px #fff;
+    }
+    #respawn-screen {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(139, 0, 0, 0.7);
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    #respawn-screen h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    #respawn-btn {
+      padding: 12px 24px;
+      font-size: 20px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #respawn-btn:hover {
+      background: #2ec771;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="crosshair">+</div>
+
+  <div id="ui">
+    <div id="health-bar"><div id="health-fill"></div></div>
+    <div id="hotbar">
+      <div class="slot active" id="slot-1">1</div>
+      <div class="slot" id="slot-2">2</div>
+      <div class="slot" id="slot-3">3</div>
+    </div>
+  </div>
+
+  <div id="respawn-screen">
+    <h1>You Died!</h1>
+    <button id="respawn-btn">Respawn</button>
+  </div>
+
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script>
+    // --- Game Setup ---
+    let camera, scene, renderer;
+    let playerHP = 100;
+    const maxHP = 100;
+    let isDead = false;
+
+    // Movement Controls
+    let moveForward = false, moveBackward = false, moveLeft = false, moveRight = false;
+    let velocity = new THREE.Vector3();
+    let direction = new THREE.Vector3();
+    let prevTime = performance.now();
+
+    // Hotbar selection
+    let activeSlot = 1;
+    const blockTypes = { 1: 0x55aa55, 2: 0x8b5a2b, 3: 0x888888 }; // Dirt/Grass, Wood, Stone
+
+    // Interactive Objects
+    const blocks = [];
+    const mobs = [];
+
+    // Pointer Lock setup
+    const controls = {
+      isLocked: false,
+      pitch: 0,
+      yaw: 0
+    };
+
+    init();
+    animate();
+
+    function init() {
+      // Scene & Camera
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x87ceeb); // Sky blue
+
+      camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera.position.set(0, 2, 5);
+
+      // Lighting
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+      scene.add(ambientLight);
+      const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+      dirLight.position.set(20, 40, 20);
+      scene.add(dirLight);
+
+      // Generate World Ground
+      const geometry = new THREE.BoxGeometry(1, 1, 1);
+      const material = new THREE.MeshLambertMaterial({ color: 0x55aa55 });
+
+      for (let x = -10; x <= 10; x++) {
+        for (let z = -10; z <= 10; z++) {
+          const block = new THREE.Mesh(geometry, material);
+          block.position.set(x, 0, z);
+          scene.add(block);
+          blocks.push(block);
+        }
+      }
+
+      // Renderer
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      // Event Listeners
+      window.addEventListener('resize', onWindowResize);
+      document.addEventListener('keydown', onKeyDown);
+      document.addEventListener('keyup', onKeyUp);
+      document.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('mousedown', onMouseDown);
+
+      document.body.addEventListener('click', () => {
+        if (!controls.isLocked && !isDead) {
+          document.body.requestPointerLock();
+        }
+      });
+
+      document.addEventListener('pointerlockchange', () => {
+        controls.isLocked = document.pointerLockElement === document.body;
+      });
+
+      document.getElementById('respawn-btn').addEventListener('click', respawn);
+
+      // Spawn initial mobs
+      spawnMob(-3, 1, -5);
+      spawnMob(3, 1, -5);
+    }
+
+    // --- Mob System ---
+    function spawnMob(x, y, z) {
+      const mobGroup = new THREE.Group();
+      
+      // Mob Body (Red Box)
+      const bodyGeo = new THREE.BoxGeometry(0.8, 1.6, 0.8);
+      const bodyMat = new THREE.MeshLambertMaterial({ color: 0xe74c3c });
+      const body = new THREE.Mesh(bodyGeo, bodyMat);
+      body.position.y = 0.8;
+      mobGroup.add(body);
+
+      mobGroup.position.set(x, y, z);
+      
+      const mobData = {
+        mesh: mobGroup,
+        hp: 30,
+        maxHp: 30,
+        lastAttack: 0
+      };
+
+      scene.add(mobGroup);
+      mobs.push(mobData);
+    }
+
+    // --- Controls & Input ---
+    function onKeyDown(e) {
+      if (isDead) return;
+      switch (e.code) {
+        case 'KeyW': moveForward = true; break;
+        case 'KeyS': moveBackward = true; break;
+        case 'KeyA': moveLeft = true; break;
+        case 'KeyD': moveRight = true; break;
+        case 'Digit1': setSlot(1); break;
+        case 'Digit2': setSlot(2); break;
+        case 'Digit3': setSlot(3); break;
+      }
+    }
+
+    function onKeyUp(e) {
+      switch (e.code) {
+        case 'KeyW': moveForward = false; break;
+        case 'KeyS': moveBackward = false; break;
+        case 'KeyA': moveLeft = false; break;
+        case 'KeyD': moveRight = false; break;
+      }
+    }
+
+    function setSlot(num) {
+      activeSlot = num;
+      document.querySelectorAll('.slot').forEach((el, idx) => {
+        el.classList.toggle('active', idx + 1 === num);
+      });
+    }
+
+    function onMouseMove(e) {
+      if (!controls.isLocked || isDead) return;
+      
+      controls.yaw -= e.movementX * 0.002;
+      controls.pitch -= e.movementY * 0.002;
+      
+      // Limit vertical look angle
+      controls.pitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, controls.pitch));
+
+      camera.rotation.order = "YXZ";
+      camera.rotation.y = controls.yaw;
+      camera.rotation.x = controls.pitch;
+    }
+
+    // --- Interactions (Mine / Place / Attack) ---
+    function onMouseDown(e) {
+      if (!controls.isLocked || isDead) return;
+
+      const raycaster = new THREE.Raycaster();
+      raycaster.setFromCamera(new THREE.Vector2(0, 0), camera);
+
+      // Left Click: Attack / Mine
+      if (e.button === 0) {
+        // Check Mob hit
+        const mobMeshes = mobs.map(m => m.mesh.children[0]);
+        const mobIntersects = raycaster.intersectObjects(mobMeshes);
+
+        if (mobIntersects.length > 0 && mobIntersects[0].distance < 4) {
+          const hitMesh = mobIntersects[0].object.parent;
+          const mob = mobs.find(m => m.mesh === hitMesh);
+          if (mob) {
+            mob.hp -= 10;
+            // Visual feedback on hit
+            mob.mesh.children[0].material.color.setHex(0xffffff);
+            setTimeout(() => mob.mesh.children[0].material.color.setHex(0xe74c3c), 100);
+
+            if (mob.hp <= 0) {
+              scene.remove(mob.mesh);
+              mobs.splice(mobs.indexOf(mob), 1);
+            }
+          }
+          return;
+        }
+
+        // Check Block Mining
+        const blockIntersects = raycaster.intersectObjects(blocks);
+        if (blockIntersects.length > 0 && blockIntersects[0].distance < 5) {
+          const hitBlock = blockIntersects[0].object;
+          scene.remove(hitBlock);
+          blocks.splice(blocks.indexOf(hitBlock), 1);
+        }
+      } 
+      // Right Click: Place Block
+      else if (e.button === 2) {
+        const blockIntersects = raycaster.intersectObjects(blocks);
+        if (blockIntersects.length > 0 && blockIntersects[0].distance < 5) {
+          const intersect = blockIntersects[0];
+          const newPos = intersect.object.position.clone().add(intersect.face.normal);
+
+          const geometry = new THREE.BoxGeometry(1, 1, 1);
+          const material = new THREE.MeshLambertMaterial({ color: blockTypes[activeSlot] });
+          const newBlock = new THREE.Mesh(geometry, material);
+          newBlock.position.copy(newPos);
+
+          scene.add(newBlock);
+          blocks.push(newBlock);
+        }
+      }
+    }
+
+    // --- Player Health & Respawn ---
+    function damagePlayer(amount) {
+      if (isDead) return;
+      playerHP = Math.max(0, playerHP - amount);
+      document.getElementById('health-fill').style.width = (playerHP / maxHP * 100) + '%';
+
+      if (playerHP <= 0) {
+        isDead = true;
+        document.exitPointerLock();
+        document.getElementById('respawn-screen').style.display = 'flex';
+      }
+    }
+
+    function respawn() {
+      playerHP = maxHP;
+      document.getElementById('health-fill').style.width = '100%';
+      camera.position.set(0, 2, 5);
+      isDead = false;
+      document.getElementById('respawn-screen').style.display = 'none';
+      document.body.requestPointerLock();
+    }
+
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    // --- Game Loop ---
+    function animate() {
+      requestAnimationFrame(animate);
+
+      const time = performance.now();
+      const delta = (time - prevTime) / 1000;
+      prevTime = time;
+
+      if (controls.isLocked && !isDead) {
+        // Player Movement
+        velocity.x -= velocity.x * 10.0 * delta;
+        velocity.z -= velocity.z * 10.0 * delta;
+
+        direction.z = Number(moveForward) - Number(moveBackward);
+        direction.x = Number(moveRight) - Number(moveLeft);
+        direction.normalize();
+
+        if (moveForward || moveBackward) velocity.z -= direction.z * 40.0 * delta;
+        if (moveLeft || moveRight) velocity.x -= direction.x * 40.0 * delta;
+
+        camera.translateX(-velocity.x * delta);
+        camera.translateZ(velocity.z * delta);
+        camera.position.y = 2; // Lock height
+      }
+
+      // Mob AI Behavior
+      const now = Date.now();
+      mobs.forEach(mob => {
+        const mobPos = mob.mesh.position;
+        const playerPos = camera.position;
+        const dist = mobPos.distanceTo(playerPos);
+
+        // Move toward player if nearby
+        if (dist < 10 && dist > 1.2 && !isDead) {
+          const dir = new THREE.Vector3().subVectors(playerPos, mobPos).normalize();
+          mobPos.x += dir.x * 2.0 * delta;
+          mobPos.z += dir.z * 2.0 * delta;
+          mob.mesh.lookAt(playerPos.x, mobPos.y, playerPos.z);
+        }
+
+        // Attack Player if close
+        if (dist <= 1.5 && now - mob.lastAttack > 1000 && !isDead) {
+          damagePlayer(15);
+          mob.lastAttack = now;
+        }
+      });
+
+      renderer.render(scene, camera);
+    }
+  </script>
+</body>
+</html>
