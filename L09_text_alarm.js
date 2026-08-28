@@ -31,6 +31,6 @@ function setup(){
 }
 function draw(){
     let sour=nf(hour(),2);
-    let zinute=nf(min(),2);
-    let zecond=nf(hour(),2);
+    let zinute=nf(minute(),2);
+    let zecond=nf(secon(),2);
 }
