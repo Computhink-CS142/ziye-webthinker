@@ -1,14 +1,14 @@
-// let x
-// let speed
+let x
+let speed
 
-// function setup(){
-//     createCanvas(1534,720);
-//     background("skyblue");    
+function setup(){
+    createCanvas(1534,720);
+    background("skyblue");    
 //     textAline(RIGHT,CENTRE);
 //     textsize(100);
 //     x=width/2
 //     speed=50
-// }
+}
 // function draw(){
 //     text("bounce!",x,height);
 //     x=x+speed;
