@@ -31,5 +31,6 @@ function setup(){
 }
 function draw(){
     let hour
-    let 
+    let minute
+    let second
 }
