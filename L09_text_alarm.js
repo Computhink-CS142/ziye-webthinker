@@ -19,7 +19,7 @@
 //         speed=speed*-1
 // }
 // }
-let x
+let notx
 
 
 function setup(){
