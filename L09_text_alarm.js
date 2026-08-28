@@ -30,5 +30,6 @@ function setup(){
     x=width/2
 }
 function draw(){
-    let
+    let hour
+    let 
 }
