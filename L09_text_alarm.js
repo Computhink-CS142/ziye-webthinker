@@ -29,4 +29,6 @@ function setup(){
     textsize(100);
     x=width/2
 }
-functiondraw()
+function draw(){
+    let
+}
