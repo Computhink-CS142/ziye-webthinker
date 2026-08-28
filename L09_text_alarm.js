@@ -20,7 +20,7 @@
 // }
 // }
 let x
-let speed
+
 
 function setup(){
     createCanvas(1534,720);
