@@ -5,7 +5,7 @@
     createCanvas(1534,720);
      background("skyblue");    
      textAlign(RIGHT,CENTER);
-     textSize(1000);
+     textSize(10);
      notx=width/2
      speed=50
  }
