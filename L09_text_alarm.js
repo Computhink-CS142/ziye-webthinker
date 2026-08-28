@@ -10,7 +10,7 @@
      speed=50
  }
  function draw(){
-     text("bounce!",x,height);
+     text("bounce!",notx,height);
      notx=notx+speed;
      if (x>width) {
          speed=speed*-1
