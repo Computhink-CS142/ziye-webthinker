@@ -8,7 +8,6 @@
      input=createInput("");
     input.position(160,530);
     input.input(updateText);
-    AggregateError.input
  }
  function draw(){
     fill(0);
@@ -16,6 +15,7 @@
     textSize(24);
     textAlign(CENTER,CENTER);
     text(userText,width/2,height/2);
+    
     
 
  }
