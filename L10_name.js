@@ -17,5 +17,5 @@
 
  }
  function updateText(){
-    user
+    userText=this,value
  }
