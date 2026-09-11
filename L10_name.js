@@ -33,3 +33,9 @@
 
 //  }
 let colorPicker
+function setup(){
+    createCanvas(600,600);
+    colorPicker=createColorPicker("#ff6200");
+    colorPicker.position(300,300);
+}
+
