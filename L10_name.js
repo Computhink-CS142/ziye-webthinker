@@ -25,6 +25,9 @@ let colorPicker
     textSize(24);
     textAlign(CENTER,CENTER);
     text(userText,width/2,height/2);
+     textSize(24);
+    textAlign(CENTER,CENTER);
+    text(ageText,width/2,height/2);
     textSize(30);
     textAlign(LEFT);
     text("enter ur password",50,350)
