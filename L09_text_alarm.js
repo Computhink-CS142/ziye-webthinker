@@ -47,7 +47,7 @@ function setup(){
     background("skyblue");
     fill(0);
     textSize(60)
-    text
+    text(countdown,180)
     textSize(18);
     text("click me to start the timer",200,250);
 
