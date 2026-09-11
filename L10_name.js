@@ -6,6 +6,6 @@
     fill(0)
     textSize(24);
     textAlign(CENTER,CENTER)
-    Text(userText,)
-    
+    Text(userText,width/2,)
+
  }
