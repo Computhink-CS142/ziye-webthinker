@@ -69,6 +69,7 @@ let alarmSound;
 let timer;
 function setup(){
     createCanvas(1534,720);
+    bgcol
     background("skyblue");    
 }
  function draw(){
