@@ -11,6 +11,7 @@
  }
  function draw(){
     fill(0);
+    background("skyblue");
     textSize(24);
     textAlign(CENTER,CENTER);
     Text(userText,width/2,height/2);
