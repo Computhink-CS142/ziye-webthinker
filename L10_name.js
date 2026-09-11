@@ -43,5 +43,5 @@ let colorPicker
 function draw(){
     background(colorPicker.value())
     fill("White")
-    rect(100,100,560,200)
+    rect(100,1,560,200)
 }
