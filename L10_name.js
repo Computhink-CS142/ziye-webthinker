@@ -32,7 +32,7 @@
     userText=this.value();
  }
  function updateageText(){
-    agetext
+    agetext = this.value();
  }
 
 let colorPicker
