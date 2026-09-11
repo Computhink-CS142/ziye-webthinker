@@ -128,20 +128,20 @@ function draw(){
     textSize(18);
     text("click me to start the timer",200,250);
 }
-//  function mousePressed(){
-//     countdown=5;
-//     clearInterval(timer)
-//     timer=setInterval(countDown,1000);
-//  }
-//  function countDown(){
-//     if (countdown>0){
-//         countdown--;
-//     }else{
-//         clearInterval(timer);
-//         alarmTimer=setInterval(alarm,500);
-//     }
-//  }
-//  function alarm(){
-//     bgcolor=color(random(255),random(255),random(255))
-//     alarmSound.loop();
-//  }
+ function mousePressed(){
+    countdown=5;
+    clearInterval(timer)
+    timer=setInterval(countDown,1000);
+ }
+ function countDown(){
+    if (countdown>0){
+        countdown--;
+    }else{
+        clearInterval(timer);
+        alarmTimer=setInterval(alarm,500);
+    }
+ }
+ function alarm(){
+    bgcolor=color(random(255),random(255),random(255))
+    alarmSound.loop();
+ }
