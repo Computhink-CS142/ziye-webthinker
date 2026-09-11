@@ -96,4 +96,6 @@ function setup(){
         alarmTimer=setInterval(alarmSound,500);
     }
  }
- function alarm()
+ function alarm(){
+    bgcolor=c
+ }
