@@ -10,7 +10,7 @@
     input.input(updateText);
     age.input=createInput("");
     age.input.position(160,545);
-    age.input.input(updateText);
+    age.input.input(updateageText);
  }
  function draw(){
     fill(0);
