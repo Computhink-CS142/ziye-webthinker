@@ -46,13 +46,13 @@ function setup(){
     background("skyblue");
     fill(0);
     textSize(18);
-    text("click me to start the timer");
+    text("click me to start the timer",200,250);
 
  }
  function mousePressed(){
     countdown=5;
     clearInterval(timer)
-    timer-setInterval(countDown,1000);
+    timer=setInterval(countDown,1000);
  }
  function countDown(){
     if (countdown>0){
