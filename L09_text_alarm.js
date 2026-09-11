@@ -93,5 +93,6 @@ function setup(){
         countdown--;
     }else{
         clearInterval(timer)
+        alarmTimrt
     }
  }
