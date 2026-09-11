@@ -35,7 +35,7 @@
 
 let colorPicker
 function setup(){
-    createCanvas(1534,7);
+    createCanvas(1534,727);
     colorPicker=createColorPicker("#ff6200");
     colorPicker.position(300,300);
 }
