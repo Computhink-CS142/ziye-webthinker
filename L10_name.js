@@ -1,4 +1,5 @@
  let userText="ENTER UR TEXT HERE";
+ let input;
  
  
  function setup(){
