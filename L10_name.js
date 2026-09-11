@@ -8,7 +8,7 @@
      input=createInput("");
     input.position(160,530);
     input.input(updateText);
-     input=createInput("");
+    ageinput=createInput("");
     input.position(160,530);
     input.input(updateText);
  }
