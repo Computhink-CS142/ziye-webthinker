@@ -6,7 +6,7 @@
     createCanvas(1534,720);
      background("skyblue"); 
      input=createInput("");
-    input,position(160,530);
+    input.position(160,530);
     input.input(updateText);
  }
  function draw(){
