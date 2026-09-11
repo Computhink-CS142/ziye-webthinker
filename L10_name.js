@@ -3,7 +3,7 @@
  let agetext="age";
  let ageinput;
 let colorPicker
-let colorPicker
+let colorPicker2
 
  
  function setup(){
@@ -23,7 +23,7 @@ let colorPicker
  function draw(){
      background(colorPicker.value())
 
-    fill(colorPicker.value())
+    fill(colorPicker2.value())
     rect(50,300,500,160,50)
     fill(0);
 
