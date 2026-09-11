@@ -38,4 +38,6 @@ function setup(){
     colorPicker=createColorPicker("#ff6200");
     colorPicker.position(300,300);
 }
-
+function draw(){
+    
+}
