@@ -42,5 +42,5 @@ function setup(){
 function draw(){
     background(colorPicker.value())
     fill("White")
-    Rect(width/2,v,width/2,height/2)
+    Rect(width/2,height/2,5)
 }
