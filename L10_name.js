@@ -1,6 +1,6 @@
  let userText="ENTER UR TEXT HERE";
  let input;
- let age
+ let agetext="age"
 
  
  function setup(){
