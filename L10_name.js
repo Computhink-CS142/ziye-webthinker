@@ -8,7 +8,7 @@
      input=createInput("");
     input.position(160,530);
     input.input(updateText);
-    age,input
+    age.input
  }
  function draw(){
     fill(0);
