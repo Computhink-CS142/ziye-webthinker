@@ -19,7 +19,7 @@ let colorPicker
  function draw(){
      background(colorPicker.value())
     fill("White")
-    rect(50,250,500,200)
+    rect(50,250,500,160,50)
     fill(0);
 
     textSize(24);
