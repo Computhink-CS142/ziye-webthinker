@@ -4,5 +4,6 @@
  }
  function draw(){
     fill(0)
-    textSize
+    textSize(24);
+    text
  }
