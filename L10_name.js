@@ -1,4 +1,5 @@
- let userText="ENTER "
+ let userText="ENTER UR TEXT HERE";
+ 
  
  function setup(){
     createCanvas(1534,720);
