@@ -118,30 +118,3 @@ function draw(){
     let nottime=sour+":"+zinute+":"+zecond+":"
     text(nottime,notx,height/2)
 }
-let countdown=5;
-let timer;
-function setup(){
-    createCanvas(1534,720);
-    background("skyblue");    
-}
- function draw(){
-    background("skyblue");
-    fill(0);
-    textSize(60);
-    text(countdown,180,200);
-    textSize(18);
-    text("click me to start the timer",200,250);
-
- }
- function mousePressed(){
-    countdown=5;
-    clearInterval(timer)
-    timer=setInterval(countDown,1000);
- }
- function countDown(){
-    if (countdown>0){
-        countdown--;
-    }else{
-        clearInterval(timer)
-    }
- }
