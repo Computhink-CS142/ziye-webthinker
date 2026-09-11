@@ -19,9 +19,9 @@ let colorPicker
  function draw(){
      background(colorPicker.value())
     fill("White")
-    rect(50,250,560,200)
+    rect(50,250,500,200)
     fill(0);
-    background("skyblue");
+
     textSize(24);
     textAlign(CENTER,CENTER);
     text(userText,width/2,height/2);
