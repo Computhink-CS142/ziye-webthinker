@@ -74,7 +74,7 @@ function setup(){
     background("skyblue");    
 }
  function draw(){
-    background("skyblue");
+    background(bgcolor);
     fill(0);
     textSize(60);
     text(countdown,180,200);
