@@ -3,7 +3,7 @@
 
  
  function setup(){
-    createCanvas(1534,720);
+    createCanvas(600,600);
      background("skyblue"); 
      input=createInput("");
     input.position(160,530);
