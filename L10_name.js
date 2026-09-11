@@ -16,7 +16,8 @@
     textAlign(CENTER,CENTER);
     text(userText,width/2,height/2);
     textSize(30);
-    textAlign
+    textAlign(LEFT);
+    
 
  }
  function updateText(){
