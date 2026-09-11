@@ -97,5 +97,5 @@ function setup(){
     }
  }
  function alarm(){
-    bgcolor=c
+    bgcolor=color(ra)
  }
