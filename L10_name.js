@@ -7,6 +7,7 @@
      background("skyblue"); 
      input=createInput("");
     input,position(160,530)
+    input.i
  }
  function draw(){
     fill(0)
