@@ -9,7 +9,7 @@ let colorPicker3
  function setup(){
     colorPicker=createColorPicker("#0055ff");
     colorPicker.position(160,580);
-    colorPicker2=createColorPicker("#0062ff");
+    colorPicker2=createColorPicker("#ffffff");
     colorPicker2.position(160,600);
 
     createCanvas(600,700);
