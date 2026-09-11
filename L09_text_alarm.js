@@ -93,6 +93,6 @@ function setup(){
         countdown--;
     }else{
         clearInterval(timer)
-        alarmTimer=ser
+        alarmTimer=setInterval(alarmSound,500)
     }
  }
