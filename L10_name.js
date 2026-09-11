@@ -22,7 +22,7 @@
     text(userText,width/2,height/2);
     textSize(30);
     textAlign(LEFT);
-    text("enter ur username",50,350)
+    text("enter ur password",50,350)
     
 
  }
