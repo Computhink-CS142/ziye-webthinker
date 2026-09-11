@@ -6,11 +6,11 @@
     createCanvas(600,600);
      background("skyblue"); 
      input=createInput("");
-    input.position(160,530);
+    input.position(160,520);
     input.input(updateText);
     age.input=createInput("");
-    age.input.position(160,530);
-    input.input(updateText);
+    age.input.position(160,545);
+    age.input.input(updateText);
  }
  function draw(){
     fill(0);
