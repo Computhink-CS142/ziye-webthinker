@@ -28,7 +28,7 @@ let colorPicker3
 
     fill(colorPicker2.value())
     rect(50,300,500,160,50)
-    fill(0);
+    fill(colorPicker3.value());
 
     textSize(24);
     textAlign(CENTER,CENTER);
