@@ -46,8 +46,8 @@ function setup(){
  function draw(){
     background("skyblue");
     fill(0);
-    textSize(60)
-    text(countdown,180)
+    textSize(60);
+    text(countdown,180,200);
     textSize(18);
     text("click me to start the timer",200,250);
 
