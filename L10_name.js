@@ -4,7 +4,7 @@
  let ageinput;
 let colorPicker
 let colorPicker2
-
+let colorPicker3
  
  function setup(){
     colorPicker=createColorPicker("#0055ff");
