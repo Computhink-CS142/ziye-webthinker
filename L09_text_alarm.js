@@ -92,7 +92,7 @@ function setup(){
     if (countdown>0){
         countdown--;
     }else{
-        clearInterval(timer)
-        alarmTimer=setInterval(alarmSound,500)
+        clearInterval(timer);
+        alarmTimer=setInterval(alarmSound,500);
     }
  }
