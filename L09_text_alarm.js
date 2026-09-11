@@ -72,7 +72,7 @@ let alarmTimer;
 function setup(){
     createCanvas(1534,720);
     bgcolor=color(220)
-    textAlign(CEn,200);  
+    textAlign(CENTRE,CENTRE);  
 }
  function draw(){
     background(bgcolor);
