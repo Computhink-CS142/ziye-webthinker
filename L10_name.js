@@ -11,7 +11,7 @@ let colorPicker3
     colorPicker.position(160,580);
     colorPicker2=createColorPicker("#ffffff");
     colorPicker2.position(160,620);
-    colorPicker3=createColorPicker("");
+    colorPicker3=createColorPicker("black");
     colorPicker3.position(160,660);
 
     createCanvas(600,700);
