@@ -3,7 +3,7 @@
 
  
  function setup(){
-    createCanvas(1534,720);
+    createCanvas(600,720);
      background("skyblue"); 
      input=createInput("");
     input.position(160,530);
@@ -17,7 +17,7 @@
     text(userText,width/2,height/2);
     textSize(30);
     textAlign(LEFT);
-    text("enter ur username")
+    text("enter ur username",50,350)
     
 
  }
