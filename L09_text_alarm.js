@@ -93,7 +93,7 @@ function setup(){
         countdown--;
     }else{
         clearInterval(timer);
-        alarmTimer=setInterval(alarmSound,500);
+        alarmTimer=setInterval(alarm,500);
     }
  }
  function alarm(){
