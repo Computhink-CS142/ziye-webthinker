@@ -8,8 +8,8 @@
      input=createInput("");
     input.position(160,530);
     input.input(updateText);
-    ageinput=createInput("");
-    input.position(160,530);
+    age.input=createInput("");
+    age.input.position(160,530);
     input.input(updateText);
  }
  function draw(){
