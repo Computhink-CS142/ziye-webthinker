@@ -72,7 +72,7 @@ let alarmTimer;
 function setup(){
     createCanvas(1534,720);
     bgcolor=color(220)
-    textAlign(200,200);  
+    textAlign();  
 }
  function draw(){
     background(bgcolor);
@@ -93,28 +93,10 @@ function setup(){
         countdown--;
     }else{
         clearInterval(timer);
-        alarmTimer=setInterval(alarm,500);
+        alarmTimer=setInterval(alarmSound,500);
     }
  }
  function alarm(){
     bgcolor=color(random(255),random(255),random(255))
     alarmSound.loop();
  }
-let notx
-
-
-function setup(){
-    createCanvas(1534,720);
-    background("skyblue");    
-    textAlign(CENTER,CENTER);
-    textSize(100);
-    notx=width/2
-}
-function draw(){
-    background("skyblue");    
-    let sour=nf(hour(),2);
-    let zinute=nf(minute(),2);
-    let zecond=nf(second(),2);
-    let nottime=sour+":"+zinute+":"+zecond+":"
-    text(nottime,notx,height/2)
-}
