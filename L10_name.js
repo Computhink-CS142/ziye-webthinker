@@ -6,7 +6,7 @@
  
  function setup(){
     colorPicker=createColorPicker("#ff6200");
-    colorPicker.position(160,300);
+    colorPicker.position(160,580);
     createCanvas(600,600);
      background("skyblue"); 
      input=createInput("");
