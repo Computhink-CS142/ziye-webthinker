@@ -3,11 +3,12 @@
 
  
  function setup(){
-    createCanvas(600,720);
+    createCanvas(600,600);
      background("skyblue"); 
      input=createInput("");
     input.position(160,530);
     input.input(updateText);
+    age,input
  }
  function draw(){
     fill(0);
