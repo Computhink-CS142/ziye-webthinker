@@ -65,7 +65,7 @@
 //     }
 //  }
 let countdown=5;
-let alarm
+let alarmSound;
 let timer;
 function setup(){
     createCanvas(1534,720);
