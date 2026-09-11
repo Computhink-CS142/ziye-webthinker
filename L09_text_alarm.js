@@ -121,4 +121,10 @@ function draw(){
     let zecond=nf(second(),2);
     let nottime=sour+":"+zinute+":"+zecond+":"
     text(nottime,notx,height/2)
+        background(bgcolor);
+    fill(0);
+    textSize(60);
+    text(countdown,180,200);
+    textSize(18);
+    text("click me to start the timer",200,250);
 }
