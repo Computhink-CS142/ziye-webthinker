@@ -8,6 +8,7 @@
      input=createInput("");
     input.position(160,530);
     input.input(updateText);
+    AggregateError.input
  }
  function draw(){
     fill(0);
