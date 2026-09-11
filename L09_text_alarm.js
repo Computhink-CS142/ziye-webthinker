@@ -70,6 +70,7 @@ let timer;
 function setup(){
     createCanvas(1534,720);
     bgcolor=color(220)
+    text
     background("skyblue");    
 }
  function draw(){
