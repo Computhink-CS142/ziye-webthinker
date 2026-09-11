@@ -35,13 +35,4 @@
     agetext = this.value();
  }
 
-let colorPicker
-// function setup(){
-    // createCanvas(1534,727);
- 
-// }
-function draw(){
-    background(colorPicker.value())
-    fill("White")
-    rect(10,200,560,200)
-}
+
