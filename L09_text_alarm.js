@@ -68,7 +68,7 @@ let countdown=5;
 let alarmSound;
 let timer;
 let bgcolor
-letala
+let alarmTimer
 function setup(){
     createCanvas(1534,720);
     bgcolor=color(220)
