@@ -12,7 +12,7 @@ let colorPicker3
     colorPicker2=createColorPicker("#ffffff");
     colorPicker2.position(160,620);
     colorPicker3=createColorPicker("#ffffff");
-    colorPicker3.position(160,620);
+    colorPicker3.position(160,660);
 
     createCanvas(600,700);
      background("skyblue"); 
