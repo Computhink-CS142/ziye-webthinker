@@ -3,7 +3,7 @@
 
  
  function setup(){
-    createCanvas(600,600);
+    createCanvas(1534,720);
      background("skyblue"); 
      input=createInput("");
     input.position(160,530);
@@ -15,7 +15,9 @@
     textSize(24);
     textAlign(CENTER,CENTER);
     text(userText,width/2,height/2);
-    
+    textSize(30);
+    textAlign(LEFT);
+    text
     
 
  }
