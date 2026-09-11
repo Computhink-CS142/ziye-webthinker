@@ -67,11 +67,11 @@
 let countdown=5;
 let alarmSound;
 let timer;
+let b
 function setup(){
     createCanvas(1534,720);
     bgcolor=color(220)
-    textAlighn(200,200);
-    background("skyblue");    
+    textAlighn(200,200);  
 }
  function draw(){
     background(bgcolor);
