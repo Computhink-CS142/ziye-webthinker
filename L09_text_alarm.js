@@ -70,7 +70,7 @@ let timer;
 function setup(){
     createCanvas(1534,720);
     bgcolor=color(220)
-    textAlighn()
+    textAlighn(200,200);
     background("skyblue");    
 }
  function draw(){
