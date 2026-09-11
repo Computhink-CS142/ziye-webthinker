@@ -101,7 +101,11 @@
 //     alarmSound.loop();
 //  }
 let notx
-
+let countdown=5;
+let alarmSound;
+let timer;
+let bgcolor;
+let alarmTimer;
 
 function setup(){
     createCanvas(1534,720);
