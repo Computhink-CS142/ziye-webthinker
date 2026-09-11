@@ -3,6 +3,8 @@
  let agetext="age";
  let ageinput;
 let colorPicker
+let colorPicker
+
  
  function setup(){
     colorPicker=createColorPicker("#0055ff");
