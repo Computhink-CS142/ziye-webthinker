@@ -5,5 +5,5 @@
  function draw(){
     fill(0)
     textSize(24);
-    textAlign()
+    textAlign(CENTER<)
  }
