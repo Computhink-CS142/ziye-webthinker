@@ -38,6 +38,7 @@
 //     text(nottime,notx,height/2)
 // }
 let countdown=5;
+let timer;
 function setup(){
     createCanvas(1534,720);
     background("skyblue");    
