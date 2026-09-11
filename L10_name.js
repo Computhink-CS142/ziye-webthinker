@@ -20,8 +20,8 @@ let colorPicker
  }
  function draw(){
      background(colorPicker.value())
-     
-    fill("White")
+
+    fill(colorPicker.value())
     rect(50,300,500,160,50)
     fill(0);
 
