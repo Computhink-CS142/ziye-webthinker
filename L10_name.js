@@ -7,7 +7,7 @@
      background("skyblue"); 
      input=createInput("");
     input,position(160,530)
-    input.input(upd)
+    input.input(updateText)
  }
  function draw(){
     fill(0)
@@ -16,3 +16,4 @@
     Text(userText,width/2,height/2)
 
  }
+ 
