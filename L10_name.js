@@ -3,5 +3,6 @@
      background("skyblue"); 
  }
  function draw(){
-    Fil
+    fill(0)
+    
  }
