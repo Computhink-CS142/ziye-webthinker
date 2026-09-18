@@ -31,15 +31,10 @@ let colorPicker3
     textSize(24);
     textAlign(CENTER,CENTER);
     text(userText,width/2,height/2);
-     textSize(24);
-    textAlign(CENTER,CENTER);
    
     
 
  }
  function updateText(){
     userText=this.value();
- }
- function updateageText(){
-    agetext = this.value();
  }
