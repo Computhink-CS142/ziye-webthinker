@@ -39,7 +39,7 @@ let storyTemplates;
 function setup(){
     storyTemplates=[
         "the{adjective}{verb]decided to {} {} at the {place}.",
-        "one day,a {adjective}{}wanted t",
+        "one day,a {adjective}{} wanted to ",
         "did you hear about the{adjective}"
     ]
     createCanvas(700,700);
