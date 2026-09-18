@@ -33,7 +33,6 @@ let colorPicker3
     text(userText,width/2,height/2);
      textSize(24);
     textAlign(CENTER,CENTER);
-    text(agetext,width/2,height/2+80);
    
     
 
