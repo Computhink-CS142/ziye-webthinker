@@ -53,5 +53,5 @@ function setup(){
 function draw(){
     background("skyblue")
     textAlign(RIGHT,CENTER)
-    textS
+    textSize(18)
 }
