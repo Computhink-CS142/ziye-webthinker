@@ -28,7 +28,7 @@
 //  }
 // 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥6️⃣7️⃣
 let
-    function setup(){
+function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
     }
