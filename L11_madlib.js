@@ -19,7 +19,6 @@ let colorPicker3
 
  }
  function draw(){
-     background(colorPicker.value())
 
     fill(colorPicker2.value())
     fill(colorPicker3.value());
