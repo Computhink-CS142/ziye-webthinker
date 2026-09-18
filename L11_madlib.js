@@ -37,7 +37,9 @@ let text2pointo;
 let storyText;
 let storyTemplates;
 function setup(){
-    stor
+    storyTemplates=[
+        "the"
+    ]
     createCanvas(700,700);
     background("skyblue"); 
     noun=createInput("");
