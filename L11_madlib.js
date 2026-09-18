@@ -32,10 +32,10 @@ let verb ;
 let adjective;
 let adverb;
 let place;
-let storyButton
+let storyButton;
 let text2pointo
-let storyText
-let storyTem
+let storyText;
+let storyTemplates;
 function setup(){
     createCanvas(700,700);
     background("skyblue"); 
