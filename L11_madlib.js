@@ -1,4 +1,4 @@
-let userText="ENTER UR NAME HERE";
+let userText="";
 let input;
 let agetext="age";
 let ageinput;
