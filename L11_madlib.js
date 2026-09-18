@@ -64,7 +64,7 @@ function draw(){
     text("type a verb(action)eg,floccinaucinihilipilificating",width/2,75)
     text("type a adjective(a felling)eg,Supercalifragilisticexpialidocious ",width/2,105)
     text("type a adverb(a feeling a extreme expression)eg,spectrophotofluorometrically",width/2,135)
-    text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,45)
+    text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,165)
 
 }
 function updateText(){
