@@ -5,7 +5,7 @@ let colorPicker
  
  function setup(){
     colorPicker=createColorPicker("black");
-    colorPicker.position(50,120);
+    colorPicker.position(50,100);
 
     createCanvas(200,200);
      background("skyblue"); 
