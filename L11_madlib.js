@@ -7,8 +7,8 @@
 //     colorPicker=createColorPicker("black");
 //     colorPicker.position(20,40);
 
-//     createCanvas(1500,200);
-//      background("skyblue"); 
+    // createCanvas(1500,200);
+    //  background("skyblue"); 
 //      input=createInput("");
 //     input.position(20,20);
 //     input.input(updateText);
