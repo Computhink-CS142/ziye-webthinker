@@ -75,4 +75,5 @@ function updateText(){
     template=template.replace("{adverb}",adverb.value())
     template=template.replace("{place}",place.value())
     storyText=template
+    pr
 }
