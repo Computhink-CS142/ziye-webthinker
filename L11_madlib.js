@@ -73,7 +73,5 @@ function updateText(){
     template=template.replace("{verb}",verb.value)
     template=template.replace("{adjective}",adjective.value)
     template=template.replace("{adverb}",adverb.value)
-    template=template.replace("{noun}",noun.value)
-    template=template.replace("{noun}",noun.value)
-    template=template.replace("{noun}",noun.value)
+    template=template.replace("{place}",place.value)
 }
