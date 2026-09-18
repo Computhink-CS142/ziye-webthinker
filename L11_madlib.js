@@ -25,5 +25,5 @@ let colorPicker
 
  }
  function updateText(){
-    userText=sthi.value();
+    userText=this.value();
  }
