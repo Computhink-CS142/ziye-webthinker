@@ -40,5 +40,5 @@ function setup(){
     background("skyblue"); 
     noun=createInput("");
     noun.position(20,20);
-    input.input(updateText);
+    noun.input(updateText);
     }
