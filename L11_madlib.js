@@ -12,7 +12,7 @@
 //      input=createInput("");
 //     input.position(20,20);
 //     input.input(updateText);
-// // 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥6️⃣7️⃣
+// 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥6️⃣7️⃣
 //  }
 //  function draw(){
 //     background("skyblue");
