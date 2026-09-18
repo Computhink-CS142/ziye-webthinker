@@ -31,7 +31,8 @@ let noun
 let verb 
 let adjective
 let adverb
-le
+let place
+let buon
 function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
