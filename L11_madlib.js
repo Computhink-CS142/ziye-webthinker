@@ -33,7 +33,7 @@ let adjective;
 let adverb;
 let place;
 let storyButton;
-let text2pointo
+let text2pointo;
 let storyText;
 let storyTemplates;
 function setup(){
