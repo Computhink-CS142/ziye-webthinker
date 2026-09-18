@@ -21,7 +21,7 @@ let colorPicker3
     input.input(updateText);
     ageinput=createInput("");
     ageinput.position(160,545);
-    ageinput.input(updateageText);
+
  }
  function draw(){
      background(colorPicker.value())
