@@ -18,8 +18,6 @@ let colorPicker3
      input=createInput("");
     input.position(160,520);
     input.input(updateText);
-    ageinput=createInput("");
-    ageinput.position(160,545);
 
  }
  function draw(){
