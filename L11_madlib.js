@@ -56,7 +56,7 @@ function draw(){
     textSize(18);
     text("type a noun(living thing)eg,wholphin",width/2,45)
     text("type a noun(living thing)eg,wholphin",width/2,45)
-    text("type a noun(living thing)eg,wholphin",width/2,45)
+    text("type a adj(living thing)eg,wholphin",width/2,45)
     text("type a adverb(living thing)eg,wholphin",width/2,45)
     text("type a place(living thing)eg,wholphin",width/2,45)
 
