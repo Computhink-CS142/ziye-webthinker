@@ -2,7 +2,6 @@ let userText="";
 let input;
 let ageinput;
 let colorPicker
-let colorPicker2
 let colorPicker3
  
  function setup(){
@@ -20,7 +19,7 @@ let colorPicker3
  }
  function draw(){
 
-    fill(colorPicker2.value())
+    fill(colorPicker.value())
     fill(colorPicker3.value());
     textSize(24);
     textAlign(CENTER,CENTER);
