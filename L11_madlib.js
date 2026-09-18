@@ -71,4 +71,9 @@ function updateText(){
     template=random(storyTemplates)
     template=template.replace("{noun}",noun.value)
     template=template.replace("{noun}",noun.value)
+    template=template.replace("{noun}",noun.value)
+    template=template.replace("{noun}",noun.value)
+    template=template.replace("{noun}",noun.value)
+    template=template.replace("{noun}",noun.value)
+    template=template.replace("{noun}",noun.value)
 }
