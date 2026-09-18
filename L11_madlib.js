@@ -33,7 +33,8 @@ let adjective;
 let adverb;
 let place;
 let storyButton
-let text2point0
+let text2pointo
+
 function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
