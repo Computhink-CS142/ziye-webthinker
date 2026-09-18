@@ -27,7 +27,6 @@ let colorPicker3
      background(colorPicker.value())
 
     fill(colorPicker2.value())
-    rect(50,300,500,160,50)
     fill(colorPicker3.value());
 
     textSize(24);
