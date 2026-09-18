@@ -27,7 +27,7 @@
 //     userText=this.value();
 //  }
 // 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥6️⃣7️⃣
-
+let
     function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
