@@ -38,7 +38,7 @@ let text2pointo
 function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
-    input=createInput("");
-    input.position(20,20);
+    noun=createInput("");
+    noun.position(20,20);
     input.input(updateText);
     }
