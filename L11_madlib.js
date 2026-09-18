@@ -58,6 +58,6 @@ function draw(){
     text("type a verb()eg,wholphin",width/2,45)
     text("type a adjective()eg,wholphin",width/2,45)
     text("type a adverb()eg,wholphin",width/2,45)
-    text("type a place(somewere,a city,aplace,a country)eg,wholphin",width/2,45)
+    text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,45)
 
 }
