@@ -46,7 +46,7 @@ function setup(){
     adjective.position(width/2+20,95);
     adverb=createInput("");
     adverbcsssssss.position(width/2+20,125);
-    storyButton=createInput("");
+    storyButton=createInput("create a story!!!");
     storyButton.position(20,20);
 
 }
