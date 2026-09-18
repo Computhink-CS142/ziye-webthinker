@@ -51,7 +51,7 @@ function setup(){
     storyButton.mousePressed(updateText);
 }
 function draw(){
-    background("skyblue")
-    textAlign(RIGHT,CENTER)
-    textSize(18)
+    background("skyblue");
+    textAlign(RIGHT,CENTER);
+    textSize(18);
 }
