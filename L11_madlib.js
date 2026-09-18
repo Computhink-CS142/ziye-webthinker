@@ -35,6 +35,7 @@ let place;
 let storyButton
 let text2pointo
 let storyText
+let s
 function setup(){
     createCanvas(700,700);
     background("skyblue"); 
