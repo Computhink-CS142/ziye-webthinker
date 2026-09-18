@@ -48,6 +48,5 @@ function setup(){
     adverbcsssssss.position(width/2+20,35);
     noun=createInput("");
     noun.position(20,20);
-    noun=createInput("");
-    noun.position(20,20);
+
 }
