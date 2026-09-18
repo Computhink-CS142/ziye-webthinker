@@ -69,5 +69,5 @@ function draw(){
 }
 function updateText(){
     template=random(storyTemplates)
-    template=template.replace("{noun}",)
+    template=template.replace("{noun}",noun)
 }
