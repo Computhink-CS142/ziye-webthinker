@@ -54,5 +54,5 @@ function draw(){
     background("skyblue");
     textAlign(RIGHT,CENTER);
     textSize(18);
-    TextTrackCue()
+    TextTrackCue("type a noun")
 }
