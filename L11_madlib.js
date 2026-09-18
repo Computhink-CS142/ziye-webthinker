@@ -47,6 +47,6 @@ function setup(){
     adverb=createInput("");
     adverbcsssssss.position(width/2+20,125);
     storyButton=createInput("");
-    .position(20,20);
+    storyButton.position(20,20);
 
 }
