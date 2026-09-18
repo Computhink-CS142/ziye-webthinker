@@ -27,7 +27,9 @@
 //     userText=this.value();
 //  }
 // 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥6️⃣7️⃣
-let
+let noun
+let verb 
+let a
 function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
