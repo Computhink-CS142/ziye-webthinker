@@ -34,7 +34,7 @@ let adverb;
 let place;
 let storyButton
 let text2pointo
-let 
+let storyText
 function setup(){
     createCanvas(700,700);
     background("skyblue"); 
