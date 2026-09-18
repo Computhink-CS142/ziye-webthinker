@@ -54,5 +54,5 @@ function draw(){
     background("skyblue");
     textAlign(RIGHT,CENTER);
     textSize(18);
-    TextTrackCue("type a noun(living thing)eg,wholphin")
+    text("type a noun(living thing)eg,wholphin")
 }
