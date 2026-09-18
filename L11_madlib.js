@@ -2,11 +2,10 @@ let userText="";
 let input;
 let ageinput;
 let colorPicker
-let colorPicker3
  
  function setup(){
-    colorPicker3=createColorPicker("black");
-    colorPicker3.position(160,660);
+    colorPicker=createColorPicker("black");
+    colorPicker.position(160,660);
 
     createCanvas(200,200);
      background("skyblue"); 
@@ -17,7 +16,6 @@ let colorPicker3
  }
  function draw(){
 
-    fill(colorPicker.value())
     fill(colorPicker3.value());
     textSize(24);
     textAlign(CENTER,CENTER);
