@@ -40,7 +40,7 @@ function setup(){
     storyTemplates=[
         "the{adjective}{verb]decided to {} {} at the {place}.",
         "one day,a {adjective}{} wanted to {verb} {} in {place}",
-        "did you hear about the{adjective}{noun}"
+        "did you hear about the{adjective}{noun} that tried to "
     ]
     createCanvas(700,700);
     background("skyblue"); 
