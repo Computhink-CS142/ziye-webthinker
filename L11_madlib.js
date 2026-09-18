@@ -36,6 +36,7 @@ let storyButton;
 let text2pointo;
 let storyText;
 let storyTemplates;
+let template
 function setup(){
     storyTemplates=[
         "one day,a {adjective}{noun} wanted to {verb} {adverb} in {place}",
