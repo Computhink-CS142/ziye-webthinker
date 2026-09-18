@@ -38,7 +38,7 @@ let storyText;
 let storyTemplates;
 function setup(){
     storyTemplates=[
-        "the{adjective}{}decided to {} {}"
+        "the{adjective}{}decided to {} {} at the {place}"
     ]
     createCanvas(700,700);
     background("skyblue"); 
