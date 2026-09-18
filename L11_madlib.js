@@ -38,7 +38,7 @@ let storyText;
 let storyTemplates;
 function setup(){
     storyTemplates=[
-        "the{adjective}{}decided to {} {} at the {place}.",
+        "the{adjective}{]decided to {} {} at the {place}.",
         "one day,a {adjective}",
         "did you hear about the{adjective}"
     ]
