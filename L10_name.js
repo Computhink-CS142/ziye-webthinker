@@ -1,6 +1,6 @@
- let userText="ENTER UR NAME HERE";
- let input;
-  let agetext="age";
+let userText="ENTER UR NAME HERE";
+let input;
+let agetext="age";
 let ageinput;
 let colorPicker
 let colorPicker2
