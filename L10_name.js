@@ -1,7 +1,7 @@
  let userText="ENTER UR NAME HERE";
  let input;
- let agetext="age";
- let ageinput;
+  let agetext="age";
+let ageinput;
 let colorPicker
 let colorPicker2
 let colorPicker3
