@@ -39,7 +39,7 @@ function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
     noun=createInput("");
-    noun.position(20,20);
+    noun.position(width/2,20);
     verb=createInput("");
     verb.position(20,20);
     adjective=createInput("");
