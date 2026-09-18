@@ -15,7 +15,7 @@ let colorPicker
 
  }
  function draw(){
-
+    background("skyblue");
     fill(colorPicker.value());
     textSize(24);
     textAlign(CENTER,CENTER);
