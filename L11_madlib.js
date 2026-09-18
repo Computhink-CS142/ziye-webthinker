@@ -7,7 +7,7 @@ let colorPicker
     colorPicker=createColorPicker("black");
     colorPicker.position(20,40);
 
-    createCanvas(200,200);
+    createCanvas(1500,200);
      background("skyblue"); 
      input=createInput("");
     input.position(20,20);
