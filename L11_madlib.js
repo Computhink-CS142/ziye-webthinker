@@ -70,8 +70,8 @@ function draw(){
 function updateText(){
     template=random(storyTemplates)
     template=template.replace("{noun}",noun.value)
-    template=template.replace("{noun}",noun.value)
-    template=template.replace("{noun}",noun.value)
+    template=template.replace("{verb}",verb.value)
+    template=template.replace("{noun}",ad.value)
     template=template.replace("{noun}",noun.value)
     template=template.replace("{noun}",noun.value)
     template=template.replace("{noun}",noun.value)
