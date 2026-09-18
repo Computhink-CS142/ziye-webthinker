@@ -51,5 +51,5 @@ function setup(){
     storyButton.mousePressed(updateText);
 }
 function draw(){
-    
+    background
 }
