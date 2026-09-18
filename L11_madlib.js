@@ -49,6 +49,7 @@ function setup(){
     storyButton=createInput("create a story!!!");
     storyButton.position(20,20);
     storyButton.mousePressed(updateText);
-
-
+}
+function draw(){
+    
 }
