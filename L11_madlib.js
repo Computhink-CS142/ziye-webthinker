@@ -27,13 +27,16 @@
 //     userText=this.value();
 //  }
 // 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥6️⃣7️⃣
-let noun
-let verb 
-let adjective
-let adverb
-let place
-let storyButton(⭐⭐⭐⭐⭐)
+let noun;
+let verb ;
+let adjective;
+let adverb;
+let place;
+let storyButton
 function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
+    input=createInput("");
+    input.position(20,20);
+    input.input(updateText);
     }
