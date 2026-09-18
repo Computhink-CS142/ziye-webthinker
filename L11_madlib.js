@@ -16,7 +16,7 @@ let colorPicker3
     createCanvas(200,200);
      background("skyblue"); 
      input=createInput("");
-    input.position(160,520);
+    input.position(20,50);
     input.input(updateText);
 
  }
