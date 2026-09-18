@@ -41,7 +41,7 @@ function setup(){
     noun=createInput("");
     noun.position(width/2+20,35);
     verb=createInput("");
-    verb.position(20,20);
+    verb.position(width/2+20,65);
     adjective=createInput("");
     adjective.position(20,20);
     adverb=createInput("");
