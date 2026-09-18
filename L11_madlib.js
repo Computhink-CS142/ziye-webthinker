@@ -42,7 +42,7 @@ function setup(){
         "the{adjective}{verb]decided to {verb} {adverb} at the {place}.",
         "did you hear about the{adjective}{noun} that tried to {verb} {adverb} near {place}",
     ]
-    createCanvas(1560,700);
+    createCanvas(1700,700);
     background("skyblue"); 
     noun=createInput("");
     noun.position(width/2+20,35);
