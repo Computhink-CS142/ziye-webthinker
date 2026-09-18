@@ -54,5 +54,5 @@ function draw(){
     background("skyblue");
     textAlign(RIGHT,CENTER);
     textSize(18);
-    text("type a noun(living thing)eg,wholphin",width)
+    text("type a noun(living thing)eg,wholphin",width/2,45)
 }
