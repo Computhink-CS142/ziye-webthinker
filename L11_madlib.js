@@ -36,7 +36,7 @@ let storyButton
 let text2pointo
 
 function setup(){
-    createCanvas(1500,200);
+    createCanvas(700,700);
     background("skyblue"); 
     noun=createInput("");
     noun.position(width/2+20,35);
@@ -49,6 +49,6 @@ function setup(){
     storyButton=createInput("create a story!!!");
     storyButton.position(20,20);
     storyButton.mousePressed(updateText);
-    
+
 
 }
