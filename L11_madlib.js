@@ -1,6 +1,5 @@
 let userText="";
 let input;
-let agetext="age";
 let ageinput;
 let colorPicker
 let colorPicker2
