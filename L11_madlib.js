@@ -5,8 +5,6 @@ let colorPicker
 let colorPicker3
  
  function setup(){
-    colorPicker=createColorPicker("#ffffff");
-    colorPicker.position(160,620);
     colorPicker3=createColorPicker("black");
     colorPicker3.position(160,660);
 
