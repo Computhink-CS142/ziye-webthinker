@@ -68,5 +68,5 @@ function draw(){
 
 }
 function updateText(){
-    
+    t
 }
