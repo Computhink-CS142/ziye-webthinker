@@ -29,7 +29,8 @@
 // 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥6️⃣7️⃣
 let noun
 let verb 
-let a
+let adjective
+
 function setup(){
     createCanvas(1500,200);
     background("skyblue"); 
