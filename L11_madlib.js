@@ -48,5 +48,6 @@ function setup(){
     adverbcsssssss.position(width/2+20,125);
     storyButton=createInput("create a story!!!");
     storyButton.position(20,20);
+    storyButton.mouse
 
 }
