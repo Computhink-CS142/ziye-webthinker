@@ -30,5 +30,5 @@ let colorPicker3
 
  }
  function updateText(){
-    userText=this.value();
+    userdText=this.value();
  }
