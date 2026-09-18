@@ -16,7 +16,7 @@ let colorPicker
  }
  function draw(){
 
-    fill(colorPicker3.value());
+    fill(colorPicker.value());
     textSize(24);
     textAlign(CENTER,CENTER);
     text(userText,width/2,height/2);
