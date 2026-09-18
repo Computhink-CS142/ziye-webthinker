@@ -43,9 +43,9 @@ function setup(){
     verb=createInput("");
     verb.position(width/2+20,65);
     adjective=createInput("");
-    adjective.position(20,20);
+    adjective.position(width/2+20,35);
     adverb=createInput("");
-    adverbcsssssss.position(20,20);
+    adverbcsssssss.position(width/2+20,35);
     noun=createInput("");
     noun.position(20,20);
     noun=createInput("");
