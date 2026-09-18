@@ -7,7 +7,7 @@ let colorPicker3
  
  function setup(){
     colorPicker=createColorPicker("#0055ff");
-    colorPicker.position(160,580);
+    colorPicker.position(160,180);
     colorPicker2=createColorPicker("#ffffff");
     colorPicker2.position(160,620);
     colorPicker3=createColorPicker("black");
