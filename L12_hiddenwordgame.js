@@ -11,7 +11,8 @@ function setup(){
 }
 function draw(){
     background("lightgrey");
-    Text("GUESS THE HIDDEN WORD")
+    Text("GUESS THE HIDDEN WORD!")
+    TEXT
 }
 function updateText(){
 
