@@ -11,6 +11,7 @@ function setup(){
 }
 function draw(){
     background("lightgrey");
+    Text("G")
 }
 function updateText(){
 
