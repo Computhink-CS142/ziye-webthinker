@@ -4,10 +4,10 @@ function setup(){
     createCanvas(800,700);
     background("lightgrey");
     place=createInput("");
-    place.position(width/2+20,155);
+    guesstype.position(width/2+20,155);
     guessbutton=createButton("create a story!!!");
-    storyButton.position(width/2+20,185);
-    storyButton.mousePressed(updateText);
+    guessbuttonButton.position(width/2+20,185);
+    guessbuttonButton.mousePressed(updateText);
 }
 function draw(){
     background("lightgrey");
