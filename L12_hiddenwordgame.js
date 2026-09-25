@@ -1,6 +1,6 @@
-let guessbutton;
-let guessword
-let atmpt=0
+let guessbutton;;
+let guessword;
+let atmpt=0;
 let hints="s_____-";
 let wordlist
 function setup(){
