@@ -1,11 +1,11 @@
 let guessbutton
 let guesstype
 function setup(){
-createCanvas(800,700);
-background("lightgrey");
-place=createInput("");
+    createCanvas(800,700);
+    background("lightgrey");
+    place=createInput("");
     place.position(width/2+20,155);
-    storyButton=createButton("create a story!!!");
+    guessbutton=createButton("create a story!!!");
     storyButton.position(width/2+20,185);
     storyButton.mousePressed(updateText);
 }
