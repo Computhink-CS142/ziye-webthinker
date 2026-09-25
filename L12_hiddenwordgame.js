@@ -16,6 +16,6 @@ function draw(){
     textSize(70)
     text("Attempts",200,250)
 }
-function updateText(){
+function updateButton(){
     print("hello")
 }
