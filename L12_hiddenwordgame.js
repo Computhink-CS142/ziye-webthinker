@@ -13,7 +13,9 @@ function setup(){
     guessword.position(300,400);
     guessbutton=createButton("?guess?");
     guessbutton.position(width/2+25,400);
-    guessbutton.size(150,30)
+    guessbutton.size(150,30);
+    
+
     guessbutton.mousePressed(updateButton);
 }
 function draw(){
