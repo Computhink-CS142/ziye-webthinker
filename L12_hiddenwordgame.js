@@ -17,9 +17,9 @@ function draw(){
     text("GUESS THE HIDDEN WORD!",0,150);
     
 
-    
-    text("Attempts:"+atmpt,200,250);
     textSize(50);
+    text("Attempts:"+atmpt,200,250);
+    
 }
 function updateButton(){
     print("hello")
