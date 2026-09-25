@@ -6,7 +6,7 @@ function setup(){
     guesstype=createInput("");
     guesstype.position(300,400);
     guessbutton=createButton("?guess?");
-    guessbutton.position(width/2+50,400);
+    guessbutton.position(width/2+25,400);
     guessbutton.mousePressed(updateText);
 }
 function draw(){
