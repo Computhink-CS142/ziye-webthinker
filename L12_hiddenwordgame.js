@@ -20,5 +20,5 @@ function draw(){
 }
 function updateButton(){
     print("hello")
-
+    atmpt++
 }
