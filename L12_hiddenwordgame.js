@@ -21,7 +21,7 @@ function draw(){
 
     textSize(50);
     text("Attempts:"+atmpt,300,300);
-    text("")
+    text("Hint")
 }
 function updateButton(){
     print("hello")
