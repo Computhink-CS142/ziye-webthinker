@@ -9,7 +9,7 @@ function setup(){
     background("lightgrey");
     guessword=createInput("");
     guessword.size(150,30);
-    guessword.style(f)
+    guessword.style("font-size")
     guessword.position(300,400);
     guessbutton=createButton("?guess?");
     guessbutton.position(width/2+25,400);
