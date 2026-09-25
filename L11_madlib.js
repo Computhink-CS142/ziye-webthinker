@@ -27,57 +27,57 @@
 //     userText=this.value();
 //  }
 // 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥6️⃣7️⃣
-let noun;
-let verb ;
-let adjective;
-let adverb;
-let place;
-let storyButton;
-let storyText;
-let storyTemplates;
-let template
-function setup(){
-    storyTemplates=[
-        "one day,a {adjective}{noun} wanted to {verb} {adverb} in {place}",
-        "the{adjective}{verb]decided to {verb} {adverb} at the {place}.",
-        "did you hear about the{adjective}{noun} that tried to {verb} {adverb} near {place}",
-    ]
-    createCanvas(1700,700);
-    background("skyblue"); 
-    noun=createInput("");
-    noun.position(width/2+20,35);
-    verb=createInput("");
-    verb.position(width/2+20,65);
-    adjective=createInput("");
-    adjective.position(width/2+20,95);
-    adverb=createInput("");
-    adverb.position(width/2+20,125);
-    place=createInput("");
-    place.position(width/2+20,155);
-    storyButton=createButton("create a story!!!");
-    storyButton.position(width/2+20,185);
-    storyButton.mousePressed(updateText);
-}
-function draw(){
-    background("skyblue");
-    textAlign(RIGHT,CENTER);
-    textSize(18);
-    text("type a noun(living thing)eg,wholphin",width/2,45)
-    text("type a verb(action)eg,floccinaucinihilipilificating",width/2,75)
-    text("type a adjective(a felling)eg,Supercalifragilisticexpialidocious ",width/2,105)
-    text("type a adverb(a feeling a extreme expression)eg,spectrophotofluorometrically",width/2,135)
-    text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,165)
-    textAlign(CENTER,CENTER)
-    fill("red")
-    text(storyText,width/2,height/2+40);
-}
-function updateText(){
-    template=random(storyTemplates);
-    template=template.replace("{noun}",noun.value());
-    template=template.replace("{verb}",verb.value());
-    template=template.replace("{adjective}",adjective.value());
-    template=template.replace("{adverb}",adverb.value());
-    template=template.replace("{place}",place.value());
-    storyText=template;
-    print(storyText);
-}
+// let noun;
+// let verb ;
+// let adjective;
+// let adverb;
+// let place;
+// let storyButton;
+// let storyText;
+// let storyTemplates;
+// let template
+// function setup(){
+//     storyTemplates=[
+//         "one day,a {adjective}{noun} wanted to {verb} {adverb} in {place}",
+//         "the{adjective}{verb]decided to {verb} {adverb} at the {place}.",
+//         "did you hear about the{adjective}{noun} that tried to {verb} {adverb} near {place}",
+//     ]
+//     createCanvas(1700,700);
+//     background("skyblue"); 
+//     noun=createInput("");
+//     noun.position(width/2+20,35);
+//     verb=createInput("");
+//     verb.position(width/2+20,65);
+//     adjective=createInput("");
+//     adjective.position(width/2+20,95);
+//     adverb=createInput("");
+//     adverb.position(width/2+20,125);
+//     place=createInput("");
+//     place.position(width/2+20,155);
+//     storyButton=createButton("create a story!!!");
+//     storyButton.position(width/2+20,185);
+//     storyButton.mousePressed(updateText);
+// }
+// function draw(){
+//     background("skyblue");
+//     textAlign(RIGHT,CENTER);
+//     textSize(18);
+//     text("type a noun(living thing)eg,wholphin",width/2,45)
+//     text("type a verb(action)eg,floccinaucinihilipilificating",width/2,75)
+//     text("type a adjective(a felling)eg,Supercalifragilisticexpialidocious ",width/2,105)
+//     text("type a adverb(a feeling a extreme expression)eg,spectrophotofluorometrically",width/2,135)
+//     text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,165)
+//     textAlign(CENTER,CENTER)
+//     fill("red")
+//     text(storyText,width/2,height/2+40);
+// }
+// function updateText(){
+//     template=random(storyTemplates);
+//     template=template.replace("{noun}",noun.value());
+//     template=template.replace("{verb}",verb.value());
+//     template=template.replace("{adjective}",adjective.value());
+//     template=template.replace("{adverb}",adverb.value());
+//     template=template.replace("{place}",place.value());
+//     storyText=template;
+//     print(storyText);
+// }
