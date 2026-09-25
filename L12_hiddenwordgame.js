@@ -1,6 +1,6 @@
 let guessbutton
 let guesstype
-let at
+let atmpt
 function setup(){
     createCanvas(1000,700);
     background("lightgrey");
@@ -18,5 +18,4 @@ function draw(){
 }
 function updateText(){
     print("hello")
-
 }
