@@ -2,6 +2,7 @@ let guessbutton
 let guesstype
 let atmpt=0
 let hints
+let wordlist
 function setup(){
     createCanvas(1000,700);
     background("lightgrey");
@@ -15,7 +16,7 @@ function draw(){
     background("lightgrey");
     textSize(70);
     text("GUESS THE HIDDEN WORD!",0,150);
-    wordlist
+    wordlist=
 
     textSize(50);
     text("Attempts:"+atmpt,300,300);
