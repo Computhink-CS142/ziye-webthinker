@@ -12,4 +12,6 @@ function setup(){
 function draw(){
     background("lightgrey");
 }
-function updateText()
+function updateText(){
+    
+}
