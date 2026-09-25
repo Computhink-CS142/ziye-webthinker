@@ -66,6 +66,7 @@ function draw(){
     text("type a adverb(a feeling a extreme expression)eg,spectrophotofluorometrically",width/2,135)
     text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,165)
     textAlign(CENTER,CENTER )
+    FileList("red")
 }
 function updateText(){
     template=random(storyTemplates)
