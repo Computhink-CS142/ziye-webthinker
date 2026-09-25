@@ -5,7 +5,7 @@ function setup(){
     background("lightgrey");
     guesstype=createInput("");
     guesstype.position(width/2+20,155);
-    guessbutton=createButton("create a story!!!");
+    guessbutton=createButton("guess?");
     guessbutton.position(width/2+20,185);
     guessbutton.mousePressed(updateText);
 }
@@ -13,5 +13,5 @@ function draw(){
     background("lightgrey");
 }
 function updateText(){
-    
+
 }
