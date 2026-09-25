@@ -67,7 +67,7 @@ function draw(){
     text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,165)
     textAlign(CENTER,CENTER )
     FileList("red")
-    text(myStory,width)
+    text(myStory,width/2,hieght)
 }
 function updateText(){
     template=random(storyTemplates)
