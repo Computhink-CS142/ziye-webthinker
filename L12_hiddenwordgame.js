@@ -8,6 +8,7 @@ function setup(){
     createCanvas(1000,700);
     background("lightgrey");
     guessword=createInput("");
+    guessword
     guessword.position(300,400);
     guessbutton=createButton("?guess?");
     guessbutton.position(width/2+25,400);
