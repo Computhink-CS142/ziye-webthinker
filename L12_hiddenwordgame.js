@@ -15,7 +15,7 @@ function draw(){
     background("lightgrey");
     textSize(70);
     text("GUESS THE HIDDEN WORD!",0,150);
-    
+    wordlist
 
     textSize(50);
     text("Attempts:"+atmpt,300,300);
