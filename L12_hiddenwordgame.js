@@ -1,5 +1,5 @@
 let guessbutton
-guesstype
+let guesstype
 function setup(){
 createCanvas(800,700);
 background("lightgrey");
