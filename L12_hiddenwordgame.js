@@ -3,7 +3,7 @@ let guesstype
 function setup(){
     createCanvas(800,700);
     background("lightgrey");
-    place=createInput("");
+    guesstype=createInput("");
     guesstype.position(width/2+20,155);
     guessbutton=createButton("create a story!!!");
     guessbuttonButton.position(width/2+20,185);
