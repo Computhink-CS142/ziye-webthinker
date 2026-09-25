@@ -13,12 +13,13 @@ function setup(){
 }
 function draw(){
     background("lightgrey");
-    text("GUESS THE HIDDEN WORD!",0,150)
-    textSize(70)
+    textSize(70);
+    text("GUESS THE HIDDEN WORD!",0,150);
+    
 
     
-    text("Attempts:"+atmpt,200,250)
-    textSize(50)
+    text("Attempts:"+atmpt,200,250);
+    textSize(50);
 }
 function updateButton(){
     print("hello")
