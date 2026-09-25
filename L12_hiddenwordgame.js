@@ -1,6 +1,6 @@
 let guessbutton
 let guesstype
-let atmpt
+let atmpt=0
 let hints
 function setup(){
     createCanvas(1000,700);
