@@ -1,7 +1,7 @@
 let guessbutton
 let guesstype
 function setup(){
-    createCanvas(1000,600);
+    createCanvas(1000,500);
     background("lightgrey");
     guesstype=createInput("");
     guesstype.position(300,200);
