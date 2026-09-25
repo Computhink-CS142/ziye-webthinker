@@ -53,22 +53,22 @@ function setup(){
     adverb=createInput("");
     adverb.position(width/2+20,125);
     storyButton=createButton("create a story!!!");
-    storyButton.position(width/2+20,145);
+    storyButton.position(width/2+20,155);
     storyButton.mousePressed(updateText);
 }
-// function draw(){
-//     background("skyblue");
-//     textAlign(RIGHT,CENTER);
-//     textSize(18);
-//     text("type a noun(living thing)eg,wholphin",width/2,45)
-//     text("type a verb(action)eg,floccinaucinihilipilificating",width/2,75)
-//     text("type a adjective(a felling)eg,Supercalifragilisticexpialidocious ",width/2,105)
-//     text("type a adverb(a feeling a extreme expression)eg,spectrophotofluorometrically",width/2,135)
-//     text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,165)
-//     textAlign(CENTER,CENTER)
-//     fill("red")
-//     text(storyText,width/2,height/2+40);
-// }
+function draw(){
+    background("skyblue");
+    textAlign(RIGHT,CENTER);
+    textSize(18);
+    text("type a noun(living thing)eg,wholphin",width/2,45)
+    text("type a verb(action)eg,floccinaucinihilipilificating",width/2,75)
+    text("type a adjective(a felling)eg,Supercalifragilisticexpialidocious ",width/2,105)
+    text("type a adverb(a feeling a extreme expression)eg,spectrophotofluorometrically",width/2,135)
+    text("type a place(somewere,a city,aplace,a country)eg,United Kingdom of Great Britain and Northern Ireland",width/2,165)
+    textAlign(CENTER,CENTER)
+    fill("red")
+    text(storyText,width/2,height/2+40);
+}
 function updateText(){
     template=random(storyTemplates)
     template=template.replace("{noun}",noun.value())
