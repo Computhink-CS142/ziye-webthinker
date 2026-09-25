@@ -48,13 +48,13 @@ function setup(){
     noun.position(width/2+20,35);
     verb=createInput("");
     verb.position(width/2+20,65);
-    // adjective=createInput("");
-    // adjective.position(width/2+20,95);
-    // adverb=createInput("");
-    // adverb.position(width/2+20,125);
-    // storyButton=createButton("create a story!!!");
-    // storyButton.position(20,20);
-    // storyButton.mousePressed(updateText);
+    adjective=createInput("");
+    adjective.position(width/2+20,95);
+    adverb=createInput("");
+    adverb.position(width/2+20,125);
+    storyButton=createButton("create a story!!!");
+    storyButton.position(20,20);
+    storyButton.mousePressed(updateText);
 }
 // function draw(){
 //     background("skyblue");
