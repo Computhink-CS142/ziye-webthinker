@@ -1,7 +1,7 @@
 let guessbutton;;
 let guessword;
 let atmpt=0;
-let hints="s_____-";
+let hints="s_____";
 let wordlist
 let word
 function setup(){
