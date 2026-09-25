@@ -1,5 +1,5 @@
-button
-
+guessbutton
+guess
 function setup(){
 createCanvas(800,700);
 background("lightgrey");
