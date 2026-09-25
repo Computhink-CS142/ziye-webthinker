@@ -4,7 +4,7 @@ function setup(){
     createCanvas(800,700);
     background("lightgrey");
     guesstype=createInput("");
-    guesstype.position(width/2,100);
+    guesstype.position(width/2,200);
     guessbutton=createButton("?guess?");
     guessbutton.position(width/2+20,185);
     guessbutton.mousePressed(updateText);
