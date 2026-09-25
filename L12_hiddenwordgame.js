@@ -13,7 +13,7 @@ function draw(){
     background("lightgrey");
     text("GUESS THE HIDDEN WORD!",0,150)
     textSize(70)
-    text
+    text("A")
 }
 function updateText(){
 
