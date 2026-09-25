@@ -53,7 +53,7 @@ function setup(){
     adverb=createInput("");
     adverb.position(width/2+20,125);
     place=createInput("");
-    adverb.position(width/2+20,125);
+    place.position(width/2+20,155);
     storyButton=createButton("create a story!!!");
     storyButton.position(width/2+20,155);
     storyButton.mousePressed(updateText);
