@@ -18,7 +18,7 @@ function draw(){
     
 
     textSize(50);
-    text("Attempts:"+atmpt,200,300);
+    text("Attempts:"+atmpt,300,300);
     
 }
 function updateButton(){
