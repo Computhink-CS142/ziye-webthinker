@@ -16,6 +16,6 @@ function draw(){
     text("Attempts",200,250)
 }
 function updateText(){
-    print
+    print("hello")
 
 }
