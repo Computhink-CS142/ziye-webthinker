@@ -39,6 +39,6 @@ function generatehint(aWord){
     return aWord[0];
 }
 function updateButton(){
-    print("hello")
+    print("hello");
     atmpt++
 }
