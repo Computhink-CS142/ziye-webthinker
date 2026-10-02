@@ -1,6 +1,6 @@
 let guessbutton;;
 let guessword;
-let atmpt=1002038123970;
+let atmpt=0;
 let hints="s_____";
 let wordlist
 let hidword
@@ -11,7 +11,7 @@ function setup(){
     hidword=hidword.toUpperCase();
 
     print("the hidden word is "+hidword);
-    hints=generatehint(word)
+    hints=generatehint(hidword)
     createCanvas(1000,700);
     background("lightgrey"); 
     guessword=createInput("");
