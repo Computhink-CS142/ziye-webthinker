@@ -62,7 +62,9 @@ function extrahints(guesstwo,hidword){
     let matchedletters="";
     for(let aLetter of guesstwo){
         if (hidword,includes(aLetter)){
-            
+            if(!matchedletters.includes(aLetter)){
+                
+            }
         }
     }
 }
