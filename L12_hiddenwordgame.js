@@ -7,7 +7,7 @@ let hidword
 let message
 function setup(){
     
-    wordlist=["alarm", "angry", "arrow", "avoid","arrow","avoid", "badge", "basic" , "brush", "cabin", "carry", "carve", "cause", "chain", "chest", "chief", "child", "chill", "choke", "chore", "claim", "class", "clean", "clear", "climb", "clock", "close", "cloth", "cloud", "clown", "coach", "coast", "color", "cough", "count", "court", "cover", "crack", "craft", "crane", "crash", "crazy", "cream",  "crisp", "cross", "crowd", "crush", "cycle"," Daily","Dream",Drink,];
+    wordlist=["alarm", "angry", "arrow", "avoid","arrow","avoid", "badge", "basic" , "brush", "cabin", "carry", "carve", "cause", "chain", "chest", "chief", "child", "chill", "choke", "chore", "claim", "class", "clean", "clear", "climb", "clock", "close", "cloth", "cloud", "clown", "coach", "coast", "color", "cough", "count", "court", "cover", "crack", "craft", "crane", "crash", "crazy", "cream",  "crisp", "cross", "crowd", "crush", "cycle"," Daily","Dream","Drink",];
     hidword=random(wordlist);
     hidword=hidword.toUpperCase();
 
