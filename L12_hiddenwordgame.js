@@ -54,7 +54,7 @@ function updateButton(){
     }
     else{
         atmpt++;
-        extrahints(guesstwo,hidword)
+        ultraextrahints=extrahints(guesstwo,hidword)
     }
 
 }
