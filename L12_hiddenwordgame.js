@@ -43,6 +43,8 @@ function updateButton(){
     print("hello");
     let guesstwo=guessInput.value();
     guesstwo=guesstwo.toUpperCase();
-    if(guesstwo==)
+    if(guesstwo==hidword){
+        
+    }
     atmpt++
 }
