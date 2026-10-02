@@ -8,10 +8,10 @@ function setup(){
     
     wordlist=["alarm", "angry", "arrow", "avoid", "badge", "basic", "below", "bench", "blame", "blind", "block", "blood", "board", "boast", "brain", "bread", "break", "brick", "brief", "bring", "broad", "brush", "cabin", "cable", "camel", "candy", "carry", "carve", "cause", "chain", "chalk", "charm", "chase", "cheap", "cheat", "check", "cheek", "cheer", "chest", "chief", "child", "chill", "choke", "chore", "claim", "clash", "class", "clean", "clear", "climb", "cloak", "clock", "close", "cloth", "cloud", "clown", "coach", "coast", "color", "cough", "count", "court", "cover", "crack", "craft", "crane", "crash", "crate", "crawl", "crazy", "cream", "crime", "crisp", "cross", "crowd", "crown", "cruel", "crumb", "crush", "crust", "curve", "cycle"]
     word=random(wordlist);
-    word=word.toUpperCase();
+    hidword=word.toUpperCase();
 
     print("the hidden word is "+word);
-    hints=generatehint
+    hints=generatehint(word)
     createCanvas(1000,700);
     background("lightgrey"); 
     guessword=createInput("");
