@@ -43,6 +43,6 @@ function updateButton(){
     print("hello");
     let guesstwo=guessInput.value();
     guesstwo=guesstwo.toUpperCase();
-    if(guess)
+    if(guesstwo==)
     atmpt++
 }
