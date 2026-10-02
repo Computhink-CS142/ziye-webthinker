@@ -67,5 +67,5 @@ function extrahints(guesstwo,hidword){
             }
         }
     }
-    return matchedletters;
+    return "wrong but these or this letter is correct"matchedletters;
 }
