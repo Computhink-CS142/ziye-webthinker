@@ -52,6 +52,9 @@ function updateButton(){
         message="💫you won!💫";
         print(message)
     }
+    else if(guessbutton.length>5){
+        
+    }
     else{
         atmpt++;
         ultraextrahints=extrahints(guesstwo,hidword)
