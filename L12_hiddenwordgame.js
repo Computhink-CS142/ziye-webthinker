@@ -11,7 +11,7 @@ function setup(){
     word=word.toUpperCase();
 
     print("the hidden word is "+word);
-    hi
+    hints=generatehint
     createCanvas(1000,700);
     background("lightgrey"); 
     guessword=createInput("");
