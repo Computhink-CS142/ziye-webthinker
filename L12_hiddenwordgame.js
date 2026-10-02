@@ -6,7 +6,7 @@ let wordlist
 let hidword
 function setup(){
     
-    wordlist=["alarm", "angry", "arrow", "avoid", "badge", "basic" , "brush", "cabin", "carry", "carve", "cause", "chain", "chest", "chief", "child", "chill", "choke", "chore", "claim", "class", "clean", "clear", "climb", "clock", "close", "cloth", "cloud", "clown", "coach", "coast", "color", "cough", "count", "court", "cover", "crack", "craft", "crane", "crash", "crazy", "cream",  "crisp", "cross", "crowd", "crush", "cycle"]
+    wordlist=["alarm", "angry", "arrow", "avoid", "badge", "zbasic" , "brush", "cabin", "carry", "carve", "cause", "chain", "chest", "chief", "child", "chill", "choke", "chore", "claim", "class", "clean", "clear", "climb", "clock", "close", "cloth", "cloud", "clown", "coach", "coast", "color", "cough", "count", "court", "cover", "crack", "craft", "crane", "crash", "crazy", "cream",  "crisp", "cross", "crowd", "crush", "cycle"]
     hidword=random(wordlist);
     hidword=hidword.toUpperCase();
 
