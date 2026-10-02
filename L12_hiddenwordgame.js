@@ -33,6 +33,9 @@ function draw(){
     text("Attempts:"+atmpt,300,300);
     text("Hint:"+hints,300,350)
 }
+function generatehint(){
+    
+}
 function updateButton(){
     print("hello")
     atmpt++
