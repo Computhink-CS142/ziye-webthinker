@@ -53,7 +53,7 @@ function updateButton(){
         print(message)
     }
     else if(guessbutton.length>5){
-        ultraextrahints=""
+        ultraextrahints="you must guea"
     }
     else{
         atmpt++;
