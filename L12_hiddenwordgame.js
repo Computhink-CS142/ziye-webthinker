@@ -5,7 +5,7 @@ let hints="s_____";
 let wordlist
 let hidword
 let message
-let ultraextrahints
+let ultraextrahints="";
 function setup(){
     
     wordlist=["alarm", "angry", "arrow","acorn","apple" ,"avoid", "badge", "basic" , "brush", "cabin", "carry", "carve", "cause", "chain", "chest", "chief", "child", "chill", "choke", "chore", "claim", "class", "clean", "clear", "climb", "clock", "close", "cloth", "cloud", "clown", "coach", "coast", "color", "cough", "count", "cover", "crane", "crash", "crazy", "cream", "cross", "crowd", "crush", "cycle"," daily","dream","drink","drive"];
