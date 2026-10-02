@@ -34,7 +34,7 @@ function draw(){
     textSize(50);
     text("Attempts:"+atmpt,300,300);
     text("Hint:"+hints,300,350)
-    text(message,300,200)
+    text(message,300,600)
 }
 function generatehint(aWord){
     print("word len="+aWord.length);
