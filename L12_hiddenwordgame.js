@@ -51,7 +51,7 @@ function updateButton(){
     }
     else{
         atmpt++;
-        extrahints()
+        extrahints(guesstwo,hidword)
     }
 
 }
