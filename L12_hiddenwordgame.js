@@ -55,5 +55,5 @@ function updateButton(){
 
 }
 function extrahints(guesstwo,hidword){
-    s
+    
 }
