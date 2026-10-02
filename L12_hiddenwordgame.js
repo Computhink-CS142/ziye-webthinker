@@ -1,6 +1,6 @@
 let guessbutton;;
 let guessword;
-let atmpt=0;
+let atmpt=1002038123970;
 let hints="s_____";
 let wordlist
 let word
