@@ -49,8 +49,7 @@ function updateButton(){
     guesstwo=guesstwo.toUpperCase();
     if(guesstwo==hidword){
         ultraextrahints="";
-        message="💫you won!💫";
-        
+        message="you won!💫💫";
         print(message)
     }
     else{
