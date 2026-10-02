@@ -14,7 +14,7 @@ function setup(){
 
     print("the hidden word is "+hidword);
     hints=generatehint(hidword)
-    createCanvas(1000,700);
+    createCanvas(1400,700);
     background("lightgrey"); 
     guessword=createInput("");
     guessword.size(150,30);
