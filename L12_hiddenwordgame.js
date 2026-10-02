@@ -37,7 +37,7 @@ function draw(){
 function generatehint(aWord){
     print("word len="+aWord.length);
     let partial="_".repeat(aWord.length-1);
-    return aWord[0];
+    return aWord[0]+partial;
 }
 function updateButton(){
     print("hello");
