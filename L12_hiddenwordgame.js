@@ -44,7 +44,7 @@ function updateButton(){
     let guesstwo=guessInput.value();
     guesstwo=guesstwo.toUpperCase();
     if(guesstwo==hidword){
-        message=""
+        message="you won"
     }
     atmpt++
 }
