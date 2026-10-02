@@ -67,5 +67,5 @@ function extrahints(guesstwo,hidword){
             }
         }
     }
-    re
+    return matchedletters;
 }
