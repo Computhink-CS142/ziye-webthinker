@@ -50,7 +50,8 @@ function updateButton(){
         print(message)
     }
     else{
-        atmpt++    
+        atmpt++;
+        extrahints
     }
 
 }
