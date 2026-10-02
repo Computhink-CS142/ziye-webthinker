@@ -59,5 +59,8 @@ function updateButton(){
 
 }
 function extrahints(guesstwo,hidword){
-    
+    let matchedletters="";
+    for(let aLetter of guesstwo){
+        
+    }
 }
