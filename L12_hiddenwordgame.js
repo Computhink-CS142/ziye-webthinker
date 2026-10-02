@@ -46,6 +46,8 @@ function updateButton(){
     if(guesstwo==hidword){
         message="you won!";
     }
-    else
-    atmpt++
+    else{
+    atmpt++    
+    }
+
 }
