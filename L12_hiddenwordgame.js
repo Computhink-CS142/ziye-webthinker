@@ -47,7 +47,7 @@ function updateButton(){
         message="you won!";
     }
     else{
-    atmpt++    
+        atmpt++    
     }
 
 }
