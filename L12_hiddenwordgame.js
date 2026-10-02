@@ -41,7 +41,7 @@ function generatehint(aWord){
 }
 function updateButton(){
     print("hello");
-    let guesstwo=guessInput.value();
+    let guesstwo=guessword.value();
     guesstwo=guesstwo.toUpperCase();
     if(guesstwo==hidword){
         message="you won!";
