@@ -11,6 +11,7 @@ function setup(){
     word=word.toUpperCase();
 
     print("the hidden word is "+word);
+    hi
     createCanvas(1000,700);
     background("lightgrey"); 
     guessword=createInput("");
@@ -34,7 +35,7 @@ function draw(){
     text("Hint:"+hints,300,350)
 }
 function generatehint(){
-    
+
 }
 function updateButton(){
     print("hello")
