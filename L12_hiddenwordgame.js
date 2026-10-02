@@ -54,4 +54,6 @@ function updateButton(){
     }
 
 }
-function extrahints(guesstwo,hidword)
+function extrahints(guesstwo,hidword){
+    
+}
