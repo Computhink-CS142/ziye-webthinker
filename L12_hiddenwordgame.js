@@ -41,5 +41,6 @@ function generatehint(aWord){
 }
 function updateButton(){
     print("hello");
+    let guess
     atmpt++
 }
