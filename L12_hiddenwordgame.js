@@ -48,6 +48,7 @@ function updateButton(){
     let guesstwo=guessword.value();
     guesstwo=guesstwo.toUpperCase();
     if(guesstwo==hidword){
+        ultraextrahints="";
         message="you won!";
         print(message)
     }
