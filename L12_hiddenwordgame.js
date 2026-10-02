@@ -36,7 +36,7 @@ function draw(){
     text("Attempts:"+atmpt,300,300);
     text("Hint:"+hints,300,350)
     text(message,300,600)
-    text(ultraextrahints,300,700)
+    text(ultraextrahints,100,700)
 }
 function generatehint(aWord){
     print("word len="+aWord.length);
