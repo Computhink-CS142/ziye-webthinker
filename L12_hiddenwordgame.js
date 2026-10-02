@@ -50,6 +50,7 @@ function updateButton(){
     if(guesstwo==hidword){
         ultraextrahints="";
         message="💫you won!💫";
+        
         print(message)
     }
     else{
