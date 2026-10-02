@@ -3,14 +3,14 @@ let guessword;
 let atmpt=1002038123970;
 let hints="s_____";
 let wordlist
-let word
+let hidword
 function setup(){
     
     wordlist=["alarm", "angry", "arrow", "avoid", "badge", "basic", "below", "bench", "blame", "blind", "block", "blood", "board", "boast", "brain", "bread", "break", "brick", "brief", "bring", "broad", "brush", "cabin", "cable", "camel", "candy", "carry", "carve", "cause", "chain", "chalk", "charm", "chase", "cheap", "cheat", "check", "cheek", "cheer", "chest", "chief", "child", "chill", "choke", "chore", "claim", "clash", "class", "clean", "clear", "climb", "cloak", "clock", "close", "cloth", "cloud", "clown", "coach", "coast", "color", "cough", "count", "court", "cover", "crack", "craft", "crane", "crash", "crate", "crawl", "crazy", "cream", "crime", "crisp", "cross", "crowd", "crown", "cruel", "crumb", "crush", "crust", "curve", "cycle"]
     hidword=random(wordlist);
     hidword=hidword.toUpperCase();
 
-    print("the hidden word is "+word);
+    print("the hidden word is "+hidword);
     hints=generatehint(word)
     createCanvas(1000,700);
     background("lightgrey"); 
