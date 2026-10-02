@@ -34,8 +34,8 @@ function draw(){
     text("Attempts:"+atmpt,300,300);
     text("Hint:"+hints,300,350)
 }
-function generatehint(){
-
+function generatehint(aWord){
+    re
 }
 function updateButton(){
     print("hello")
