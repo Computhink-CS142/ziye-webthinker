@@ -35,6 +35,7 @@ function draw(){
     text("Hint:"+hints,300,350)
 }
 function generatehint(aWord){
+    print("")
     return aWord[0];
 }
 function updateButton(){
