@@ -53,7 +53,7 @@ function updateButton(){
         print(message)
     }
     else if(guessbutton.length>5){
-        ultraextrahints="you must guea"
+        ultraextrahints="you must guess a 5 letter word";
     }
     else{
         atmpt++;
