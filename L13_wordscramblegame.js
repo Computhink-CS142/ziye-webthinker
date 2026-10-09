@@ -22,7 +22,7 @@ function setup(){
      guessInput=createInput("");
      guessInput.size(150,30);
      guessInput.style("font-size","20px")
-     guessInput.position(300,400);
+     guessInput.position(500,400);
 }
 function draw(){
     textSize(100)
