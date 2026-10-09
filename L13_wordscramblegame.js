@@ -26,7 +26,7 @@ function setup(){
      guessInput.style("font-size","20px");
      guessInput.position(500,400);
      hiddenword=random(WORDS);
-     print
+     print(hiddenword)
 }
 function shuffleWord(someWord){
     return "codeworks";
