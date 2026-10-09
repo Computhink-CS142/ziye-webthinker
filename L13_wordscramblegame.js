@@ -2,6 +2,7 @@ let submitbutton
 let rescramblebutton
 let guessInput
 let hiddenword
+let messedup
 const WORDS=["intentions","Intercontinental","watermelon",
     "nationality","hippopotamus","information", "geometry", 
     "neighboorhood","commentary","broadcasting","transmitting",
@@ -27,7 +28,7 @@ function setup(){
      hiddenword=random(WORDS);
 }
 function pickNewWord(){
-    
+    hiddenword=random()
 }
 function draw(){
     textSize(100)
