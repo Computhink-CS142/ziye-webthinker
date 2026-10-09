@@ -15,9 +15,9 @@ function setup(){
      submitbutton.mousePressed(updateButton); 
     rescramblebutton=createButton("rescramble");
      rescramblebutton.position(width/2+25,400);
-     submitbutton.size(200,30);
-     submitbutton.style("font-size","20px");
-     submitbutton.mousePressed(updateButton); 
+     rescramblebutton.size(200,30);
+     rescramblebutton.style("font-size","20px");
+     rescramblebutton.mousePressed(updateButton); 
 }
 function draw(){
     textSize(100)
