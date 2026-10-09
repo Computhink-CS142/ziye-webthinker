@@ -1,6 +1,6 @@
 let submitbutton
 let rescramblebutton
-let gues
+let guessInput
 const WORDS=["intentions","Intercontinental","watermelon",
     "nationality","hippopotamus","information", "geometry", 
     "neighboorhood","commentary","broadcasting","transmitting",
