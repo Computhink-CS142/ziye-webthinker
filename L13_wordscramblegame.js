@@ -22,9 +22,12 @@ function setup(){
      rescramblebutton.mousePressed(updateButton); 
      guessInput=createInput("");
      guessInput.size(300,30);
-     guessInput.style("font-size","20px")
+     guessInput.style("font-size","20px");
      guessInput.position(500,400);
-     hiddenword=random(WORDS)
+     hiddenword=random(WORDS);
+}
+function pickNewWord(){
+    
 }
 function draw(){
     textSize(100)
