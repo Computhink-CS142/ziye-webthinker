@@ -28,7 +28,8 @@ function setup(){
      hiddenword=random(WORDS);
 }
 function pickNewWord(){
-    hiddenword=random()
+    hiddenword=random(WORDS);
+    
 }
 function draw(){
     textSize(100)
