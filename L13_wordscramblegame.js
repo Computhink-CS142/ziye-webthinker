@@ -24,7 +24,8 @@ function draw(){
     text("word scramble game",width/2-500,height/2-250)
     textSize(50)
     text("randomword:",width/2-400,height/2-200)
-    text("score:0",width/2-200,height/2+200)
+    text("score:0",width/2-150,height/2+200)
+    text("score:0",width/2-150,height/2+200)
 }
 function updateButton(){
 
