@@ -29,6 +29,7 @@ function setup(){
      print(hiddenword)
 }
 function shuffleWord(someWord){
+    let arrC
     return "codeworks";
 }
 function pickNewWord(){
