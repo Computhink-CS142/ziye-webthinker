@@ -27,10 +27,13 @@ function setup(){
      guessInput.position(500,400);
      hiddenword=random(WORDS);
 }
+function shuffleWord(someWord){
+    
+}
 function pickNewWord(){
     hiddenword=random(WORDS);
     hiddenword=hiddenword.toUpperCase();
-    messedup=shuffleWord()
+    messedup=shuffleWord(hiddenword)
 }
 function draw(){
     textSize(100)
