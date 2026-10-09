@@ -1,5 +1,5 @@
 
-const WORDS=["intentions","watermelon","nationality","hippopotamus","information","geometry","neighboorhood","commentary","broadcasting","transmi"]
+const WORDS=["intentions","watermelon","nationality","hippopotamus","information","geometry","neighboorhood","commentary","broadcasting","transmitting",""]
 let
 function setup(){
      createCanvas(1400,700);
