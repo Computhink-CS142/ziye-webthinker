@@ -9,7 +9,7 @@ function setup(){
      createCanvas(1400,700);
      background("lightgrey");
      submitbutton=createButton("submit");
-     submitbutton.position(width/2+25,400);
+     submitbutton.position(width/2+125,400);
      submitbutton.size(200,30);
      submitbutton.style("font-size","20px");
      submitbutton.mousePressed(updateButton); 
