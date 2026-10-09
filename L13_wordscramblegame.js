@@ -9,7 +9,7 @@ function setup(){
      background("lightgrey");
      guessbutton=createButton("submit");
      guessbutton.position(width/2+25,400);
-     guessbutton.size(150,30);
+     guessbutton.size(300,130);
      guessbutton.style("font-size","20px");
      guessbutton.mousePressed(updateButton); 
 }
