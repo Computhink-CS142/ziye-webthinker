@@ -28,7 +28,7 @@ function setup(){
      hiddenword=random(WORDS);
 }
 function shuffleWord(someWord){
-    
+    return "c"
 }
 function pickNewWord(){
     hiddenword=random(WORDS);
