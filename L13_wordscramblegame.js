@@ -28,7 +28,7 @@ function setup(){
      hiddenword=random(WORDS);
 }
 function shuffleWord(someWord){
-    return "c"
+    return "codeworks";
 }
 function pickNewWord(){
     hiddenword=random(WORDS);
