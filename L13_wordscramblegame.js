@@ -10,5 +10,5 @@ function setup(){
 }
 function draw(){
     text("word scramble game",width/2,height/2-100)
-    text
+    textSize(100)
 }
