@@ -31,7 +31,7 @@ function setup(){
 function shuffleWord(someWord){
     let arraySome=someWord.split("");
     for(let i=arraySome.length-1;i>0;i--){
-        let j=floor(random(i-1))
+        let j=floor(random(0,i-1))
     }
     return "codeworks";
 }
