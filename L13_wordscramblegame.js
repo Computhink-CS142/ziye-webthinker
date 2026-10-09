@@ -29,7 +29,7 @@ function setup(){
      print(hiddenword)
 }
 function shuffleWord(someWord){
-    let arraySome=someWord,sp
+    let arraySome=someWord.spli
     return "codeworks";
 }
 function pickNewWord(){
