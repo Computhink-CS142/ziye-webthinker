@@ -11,5 +11,5 @@ function setup(){
 function draw(){
     textSize(100)
     text("word scramble game",width/2-500,height/2-250)
-    text("randomword:",width/2-500,height/2-250)
+    text("randomword:",width/2,height/2)
 }
