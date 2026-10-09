@@ -9,9 +9,9 @@ function setup(){
      background("lightgrey");
      submitbutton=createButton("submit");
      submitbutton.position(width/2+25,400);
-     guessbutton.size(200,30);
-     guessbutton.style("font-size","20px");
-     guessbutton.mousePressed(updateButton); 
+     submitbutton.size(200,30);
+     submitbutton.style("font-size","20px");
+     submitbutton.mousePressed(updateButton); 
 }
 function draw(){
     textSize(100)
