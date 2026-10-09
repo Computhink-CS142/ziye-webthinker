@@ -34,7 +34,7 @@ function shuffleWord(someWord){
         let j=floor(random(0,i-1));
         let memory=arraySome[j];
         arraySome[j]=arraySome[i];
-        arraySome[i=memory]
+        arraySome[i]=memory;
     }
     return "codeworks";
 }
