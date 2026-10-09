@@ -35,7 +35,7 @@ function pickNewWord(){
     hiddenword=random(WORDS);
     hiddenword=hiddenword.toUpperCase();
     messedup=shuffleWord(hiddenword)
-    r
+    return hiddenword
 }
 function draw(){
     textSize(100)
