@@ -1,5 +1,5 @@
 
-const WORDS=
+const WORDS=["in"]
 
 function setup(){
      createCanvas(1400,700);
