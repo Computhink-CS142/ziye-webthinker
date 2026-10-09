@@ -7,6 +7,7 @@ const WORDS=["intentions","Intercontinental","watermelon",
 function setup(){
      createCanvas(1400,700);
      background("lightgrey");
+     create
      guessbutton.size(150,30);
      guessbutton.style("font-size","20px");
      guessbutton.mousePressed(updateButton); 
