@@ -31,6 +31,7 @@ function setup(){
 function shuffleWord(someWord){
     let arraySome=someWord.split("");
     for(let i=arraySome.length-1;i>0;i--){
+        let j=floor
     }
     return "codeworks";
 }
