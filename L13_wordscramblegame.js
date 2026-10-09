@@ -9,5 +9,5 @@ function setup(){
      background("lightgrey"); 
 }
 function draw(){
-    text
+    text("word")
 }
