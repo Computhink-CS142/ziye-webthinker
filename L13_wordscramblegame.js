@@ -1,5 +1,5 @@
 
-const WORDS=["intentions","watermelon","nationality",""]
+const WORDS=["intentions","watermelon","nationality","hippopo"]
 let
 function setup(){
      createCanvas(1400,700);
