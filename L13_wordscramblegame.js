@@ -29,7 +29,8 @@ function setup(){
 }
 function pickNewWord(){
     hiddenword=random(WORDS);
-    hiddenword=hiddenword.toUpperCase()
+    hiddenword=hiddenword.toUpperCase();
+    messedup=shuffe
 }
 function draw(){
     textSize(100)
