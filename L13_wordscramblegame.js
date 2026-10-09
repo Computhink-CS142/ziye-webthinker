@@ -9,5 +9,5 @@ function setup(){
      background("lightgrey"); 
 }
 function draw(){
-    text("word scramble game",width/2)
+    text("word scramble game",width/2,hie)
 }
