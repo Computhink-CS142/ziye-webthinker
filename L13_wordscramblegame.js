@@ -20,9 +20,9 @@ function setup(){
      rescramblebutton.style("font-size","20px");
      rescramblebutton.mousePressed(updateButton); 
      guessword=createInput("");
-//     guessword.size(150,30);
-//     guessword.style("font-size","20px")
-//     guessword.position(300,400);
+     guessInput.size(150,30);
+     guessI.style("font-size","20px")
+     guessword.position(300,400);
 }
 function draw(){
     textSize(100)
