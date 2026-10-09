@@ -17,3 +17,6 @@ function draw(){
     textSize(50)
     text("randomword:",width/2-400,height/2-200)
 }
+function updateButton(){
+    
+}
