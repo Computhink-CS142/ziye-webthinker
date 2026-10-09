@@ -29,7 +29,7 @@ function setup(){
 }
 function pickNewWord(){
     hiddenword=random(WORDS);
-    hiddenword=hiddenword
+    hiddenword=hiddenword.toUpper
 }
 function draw(){
     textSize(100)
