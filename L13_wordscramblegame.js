@@ -1,4 +1,5 @@
 let submitbutton
+let rescramblebutton
 const WORDS=["intentions","Intercontinental","watermelon",
     "nationality","hippopotamus","information", "geometry", 
     "neighboorhood","commentary","broadcasting","transmitting",
