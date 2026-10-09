@@ -24,7 +24,7 @@ function setup(){
      guessInput.size(300,30);
      guessInput.style("font-size","20px")
      guessInput.position(500,400);
-     hiddenword=random()
+     hiddenword=random(WORDS)
 }
 function draw(){
     textSize(100)
