@@ -52,7 +52,7 @@ function draw(){
     text("score:0",width/2-150,height/2+200)
     text("streak:0",width/2-150,height/2+250)
 }
-function mousePressed(){
+function checkguess(){
 
 }
 function rescrambleword(){
