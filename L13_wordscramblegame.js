@@ -55,4 +55,6 @@ function draw(){
 function mousePressed(){
 
 }
-function rescrambleword()
+function rescrambleword(){
+    
+}
