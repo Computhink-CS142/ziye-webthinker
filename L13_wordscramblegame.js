@@ -53,7 +53,7 @@ function draw(){
     text("streak:0",width/2-150,height/2+250)
 }
 function checkguess(){
-
+    if
 }
 function rescrambleword(){
     messedup=shuffleWord(hiddenword)
