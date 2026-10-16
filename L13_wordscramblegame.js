@@ -45,7 +45,7 @@ function pickNewWord(){
     return hiddenword
 }
 function draw(){
-    background(skyblue)
+    background("skyblue")
     textSize(100)
     text("word scramble game",width/2-500,height/2-250)
     textSize(50)
