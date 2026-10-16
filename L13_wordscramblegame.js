@@ -54,7 +54,8 @@ function draw(){
 }
 function checkguess(){
     let guess=guessInput.value();
-    guess=guess.toUpperCase
+    guess=guess.toUpperCase();
+    if (guess===hiddenword)
 }
 function rescrambleword(){
     messedup=shuffleWord(hiddenword);
