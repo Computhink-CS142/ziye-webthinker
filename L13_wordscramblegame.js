@@ -20,7 +20,7 @@ function setup(){
      rescramblebutton.position(width/2-500,400);
      rescramblebutton.size(200,30);
      rescramblebutton.style("font-size","20px");
-     rescramblebutton.mousePressed(updateButton); 
+     rescramblebutton.mousePressed(rescrambleword); 
      guessInput=createInput("");
      guessInput.size(300,30);
      guessInput.style("font-size","20px");
