@@ -56,5 +56,5 @@ function mousePressed(){
 
 }
 function rescrambleword(){
-    messedup
+    messedup=shuffleWord()
 }
