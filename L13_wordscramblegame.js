@@ -53,7 +53,8 @@ function draw(){
     text("streak:0",width/2-150,height/2+250)
 }
 function checkguess(){
-    let guess=guessInput
+    let guess=guessInput.value()
+    
 }
 function rescrambleword(){
     messedup=shuffleWord(hiddenword)
