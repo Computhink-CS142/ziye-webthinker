@@ -15,7 +15,7 @@ function setup(){
      submitbutton.position(width/2+125,400);
      submitbutton.size(200,30);
      submitbutton.style("font-size","20px");
-     submitbutton.mousePressed(updateButton); 
+     submitbutton.mousePressed(checkguess); 
     rescramblebutton=createButton("rescramble");
      rescramblebutton.position(width/2-500,400);
      rescramblebutton.size(200,30);
@@ -53,5 +53,5 @@ function draw(){
     text("streak:0",width/2-150,height/2+250)
 }
 function updateButton(){
-    
+
 }
