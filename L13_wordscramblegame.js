@@ -56,7 +56,8 @@ function checkguess(){
     let guess=guessInput.value();
     guess=guess.toUpperCase();
     if (guess===hiddenword){
-        console.log("you huessed it correctly")
+        console.log("you huessed it correctly.")
+        score+=
     }
 }
 function rescrambleword(){
