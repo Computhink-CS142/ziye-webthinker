@@ -7,4 +7,5 @@ function draw(){
     fill("lime")
     rect(500,height-50,50,50)
     fill("white")
+    text
 }
