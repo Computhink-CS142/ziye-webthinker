@@ -58,7 +58,12 @@ function draw(){
             spikesX[count]+spikeswidth/2,height-spikesheight
             ,spikesX[count]+spikeswidth,height
         );
-        
+        if(playerX+playersize>spikesX[count]&&
+            playerX<spikesX[count]+spikeswidth&&
+            playerY+playersize>height-spikesheight
+        ){
+            gameover=true
+        }
     }
 }
 function keyPressed(){
