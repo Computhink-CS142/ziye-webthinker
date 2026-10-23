@@ -8,5 +8,5 @@ function draw(){
     rect(500,height-50,50,50);
     fill("white");
     textSize(32);
-    textAlign()
+    textAlign(CENTER,CENTER)
 }
