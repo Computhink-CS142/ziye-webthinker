@@ -38,7 +38,9 @@ function draw(){
     textAlign(CENTER,CENTER)
     text("press                                                    to jump",width/2,50)
     fill("red")
-    for(let count=0;count<3;count++)
+    for(let count=0;count<3;count++){
+        spikesX[]
+    }
 }
 function keyPressed(){
     if (keyCode===32){
