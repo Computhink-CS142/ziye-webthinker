@@ -19,7 +19,7 @@ function draw(){
     velocity+=0.8;
     playerY+=velocity;
     if (playerY>=height-playersize){
-    
+    playerY=height
     }else{
 
     }
