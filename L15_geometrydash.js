@@ -41,12 +41,13 @@ function draw(){
     for(let count=0;count<3;count++){
         spikesX[count]-=spikespeed;
         triangle(spikesX[count],height,
-            pt
+            spikesX[count]+spikeswidth,height-spikesX,
+            spikesX[count]+spikeswidth,height
         )
     }
 }
 function keyPressed(){
-    if (keyCode===32){
+    if (keyCode===32&&is_grounded){
         velocity=-20;
     }
 }
