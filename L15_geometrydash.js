@@ -4,7 +4,8 @@ let playersize=50;
 let velocity=0;
 let is_grounded=false;
 let spikesX=[];
-let spikeswidth
+let spikeswidth=20;
+let sp
 
 
 function setup() {
