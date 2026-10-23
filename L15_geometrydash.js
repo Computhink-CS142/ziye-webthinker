@@ -32,7 +32,7 @@ function draw(){
     }
     background("black");
     fill("lime");
-    rect(100,playerY,50,50);
+    rect(300,playerY,50,50);
     fill("white");
     velocity+=0.99;
     playerY+=velocity;
