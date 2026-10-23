@@ -20,6 +20,7 @@ function draw(){
     playerY+=velocity;
     if (playerY>=height-playersize){
         playerY=height-playersize;
+        is_grounded=true;
         
     }else{
 
