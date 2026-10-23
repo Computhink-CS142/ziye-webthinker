@@ -9,6 +9,7 @@ let spikesX=[];
 let spikeswidth=50;
 let spikesheight=50;
 let spikespeed=10;
+let gameover
 
 
 function setup() {
