@@ -14,7 +14,7 @@ function setup() {
 function draw(){
     background("black");
     fill("lime");
-    rect(500,height-50,50,50);
+    rect(500,playerY,50,50);
     fill("white");
     textSize(32);
     textAlign(CENTER,CENTER)
