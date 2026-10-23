@@ -1,7 +1,8 @@
 let playerX=100;
 let playerY;
 let playersize=50;
-let velocity
+let velocity=0;
+let is
 
 
 
