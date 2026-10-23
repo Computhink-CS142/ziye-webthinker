@@ -6,7 +6,7 @@ let playersize=50;
 let velocity=0;
 let is_grounded=false;
 let spikesX=[];
-let spikeswidth=20;
+let spikeswidth=70;
 let spikesheight=70;
 let spikespeed=10;
 
