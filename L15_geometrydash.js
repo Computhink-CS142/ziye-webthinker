@@ -52,7 +52,7 @@ function draw(){
     }
 }
 function keyPressed(){
-    if (keyCode===32){
-        velocity=-10;
+    if (keyCode===32&&is_grounded){
+        velocity=-20;
     }
 }
