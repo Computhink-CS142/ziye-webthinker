@@ -19,7 +19,7 @@ function setup() {
 
     for(let count=0;count<3;count++){
         spikesX.push(width+count*300);
-        return
+        return;
     }
 }
 function draw(){
