@@ -24,7 +24,7 @@ function setup() {
 function draw(){
     if (gameover){
         fill("red")
-        
+        textSize(44)
     }
     background("black");
     fill("lime");
