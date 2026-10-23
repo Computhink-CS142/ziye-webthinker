@@ -9,7 +9,7 @@ let is_grounded=false;
 function setup() {
     createCanvas(1534, 727);
     background("black");
-    playerY=hi
+    playerY=height-25
 }
 function draw(){
     background("black");
