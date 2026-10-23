@@ -16,6 +16,7 @@ function draw(){
     fill("lime");
     rect(500,playerY,50,50);
     fill("white");
+    velocity+=0.8
     textSize(32);
     textAlign(CENTER,CENTER)
     text("press                                                    to jump",width/2,50)
