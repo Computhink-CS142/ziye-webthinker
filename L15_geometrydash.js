@@ -25,7 +25,7 @@ function draw(){
     if (gameover){
         fill("red")
         textSize(44)
-        text
+        textAlign(C)
     }
     background("black");
     fill("lime");
