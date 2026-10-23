@@ -8,7 +8,7 @@ let is_grounded=false;
 let spikesX=[];
 let spikeswidth=20;
 let spikesheight=30;
-let spikespeed=5;
+let spikespeed=10;
 
 
 function setup() {
