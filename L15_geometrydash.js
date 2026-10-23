@@ -22,6 +22,7 @@ function setup() {
     }
 }
 function draw(){
+    if (gam)
     background("black");
     fill("lime");
     rect(500,playerY,50,50);
