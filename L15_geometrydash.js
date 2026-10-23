@@ -18,7 +18,11 @@ function draw(){
     fill("white");
     velocity+=0.8;
     playerY+=velocity;
-    
+    if (playerY){
+
+    }else{
+
+    }
     textSize(32);
     textAlign(CENTER,CENTER)
     text("press                                                    to jump",width/2,50)
