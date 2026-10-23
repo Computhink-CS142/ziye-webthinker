@@ -1,5 +1,6 @@
 let playerX=100;
-let
+let playerY;
+
 
 
 
