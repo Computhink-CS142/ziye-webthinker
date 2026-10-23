@@ -18,5 +18,5 @@ function draw(){
     fill("white");
     textSize(32);
     textAlign(CENTER,CENTER)
-    text("press to jump",width/2,50)
+    text("press                                                    to jump",width/2,50)
 }
