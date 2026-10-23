@@ -3,7 +3,8 @@ let playerY;
 let playersize=50;
 let velocity=0;
 let is_grounded=false;
-let spikes
+let spikesX=[];
+
 
 
 function setup() {
