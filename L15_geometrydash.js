@@ -1,6 +1,6 @@
 
 
-let playerX=100;
+let playerX=300;
 let playerY;
 let playersize=50;
 let velocity=0;
