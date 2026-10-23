@@ -40,7 +40,7 @@ function draw(){
     fill("red")
     for(let count=0;count<3;count++){
         spikesX[count]-=spikespeed;
-        triangle(spikesX[count])
+        triangle(spikesX[count],height)
     }
 }
 function keyPressed(){
