@@ -26,7 +26,7 @@ function draw(){
         fill("red")
         textSize(44)
         textAlign(CENTER,CENTER);
-        text("GAME OVER😈",widt)
+        text("GAME OVER😈",width/2,height/2)
     }
     background("black");
     fill("lime");
