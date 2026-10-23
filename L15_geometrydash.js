@@ -5,7 +5,8 @@ let velocity=0;
 let is_grounded=false;
 let spikesX=[];
 let spikeswidth=20;
-let sp
+let spikesheight=30;
+
 
 
 function setup() {
