@@ -21,9 +21,9 @@ function draw(){
     if (playerY>=height-playersize){
         playerY=height-playersize;
         is_grounded=true;
-        
+        velocity=0;
     }else{
-
+        
     }
     textSize(32);
     textAlign(CENTER,CENTER)
