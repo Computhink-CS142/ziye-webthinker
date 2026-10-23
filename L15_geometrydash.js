@@ -37,7 +37,8 @@ function draw(){
     textSize(32);
     textAlign(CENTER,CENTER)
     text("press                                                    to jump",width/2,50)
-    fill 
+    fill("red")
+    for(let count=0;count<3;count++)
 }
 function keyPressed(){
     if (keyCode===32){
