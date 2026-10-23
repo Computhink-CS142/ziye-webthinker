@@ -23,7 +23,7 @@ function draw(){
         is_grounded=true;
         velocity=0;
     }else{
-        
+        is_grounded=false;
     }
     textSize(32);
     textAlign(CENTER,CENTER)
