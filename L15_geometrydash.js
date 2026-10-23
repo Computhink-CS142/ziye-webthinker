@@ -1,6 +1,6 @@
 
 
-let playerX=300;
+let playerX=500;
 let playerY;
 let playersize=50;
 let velocity=0;
@@ -32,7 +32,7 @@ function draw(){
     }
     background("black");
     fill("lime");
-    rect(300,playerY,50,50);
+    rect(500,playerY,50,50);
     fill("white");
     velocity+=0.99;
     playerY+=velocity;
