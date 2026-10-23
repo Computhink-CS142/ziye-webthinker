@@ -19,7 +19,7 @@ function setup() {
 
     for(let count=0;count<3;count++){
         spikesX.push(width+count*300);
-        return;
+        
     }
 }
 function draw(){
@@ -28,6 +28,7 @@ function draw(){
         textSize(44)
         textAlign(CENTER,CENTER);
         text("GAME OVER😈",width/2,height/2)
+        return;
     }
     background("black");
     fill("lime");
