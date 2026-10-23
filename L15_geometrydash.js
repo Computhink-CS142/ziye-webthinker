@@ -29,8 +29,8 @@ function draw(){
     textAlign(CENTER,CENTER)
     text("press                                                    to jump",width/2,50)
 }
-function keyPressed(){is_grounded
-    if (keyCode===32&&is_grounded){
+function keyPressed(){
+    if (keyCode===32){
         velocity=-20;
     }
 }
