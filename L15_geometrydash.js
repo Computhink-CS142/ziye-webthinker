@@ -25,7 +25,7 @@ function draw(){
     fill("lime");
     rect(500,playerY,50,50);
     fill("white");
-    velocity+=1;
+    velocity+=0.99;
     playerY+=velocity;
     if (playerY>=height-playersize){
         playerY=height-playersize;
