@@ -43,7 +43,7 @@ function draw(){
         triangle(spikesX[count],height,
             spikesX[count]+spikeswidth/2,height-spikesX
             ,spikesX[count]+spikeswidth,height
-        )
+        );
     }
 }
 function keyPressed(){
