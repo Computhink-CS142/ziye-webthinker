@@ -58,6 +58,7 @@ function draw(){
             spikesX[count]+spikeswidth/2,height-spikesheight
             ,spikesX[count]+spikeswidth,height
         );
+        
     }
 }
 function keyPressed(){
