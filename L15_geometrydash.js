@@ -2,7 +2,7 @@ let playerX=100;
 let playerY;
 let playersize=50;
 let velocity=0;
-let is
+let is_grounded=false;
 
 
 
