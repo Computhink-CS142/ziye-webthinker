@@ -9,4 +9,5 @@ function draw(){
     fill("white");
     textSize(32);
     textAlign(CENTER,CENTER)
+    text("prress")
 }
