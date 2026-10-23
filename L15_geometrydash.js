@@ -5,5 +5,5 @@ function setup() {
 function draw(){
     background("black");
     fill("lime")
-    rect(100,height-52,50,50)
+    rect(500,height-50,50,50)
 }
