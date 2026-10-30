@@ -18,7 +18,6 @@ let progress = 0;
 let groundY;
 let playerX;
 let grounded = false;
-let elapsed = 0;
 
 function setup() {
   new Canvas(windowWidth, windowHeight);
@@ -60,7 +59,6 @@ function draw() {
 
 function updateGame() {
   const frameScale = Math.min(deltaTime, 50) / (1000 / 60);
-  elapsed += frameScale;
   progress = Math.min(LEVEL_LENGTH, progress + RUN_SPEED * frameScale);
 
   player.x = playerX;
@@ -220,7 +218,6 @@ function jump() {
 
 function startOrRestart() {
   progress = 0;
-  elapsed = 0;
   player.x = playerX;
   player.y = groundY - PLAYER_SIZE / 2;
   player.vel.x = 0;
