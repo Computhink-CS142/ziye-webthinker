@@ -114,9 +114,14 @@ function resetGame() {
     wood: 4,
     hasBlade: false
   };
-  heroSprite = new Sprite(hero.x, hero.y, hero.width, hero.height);
-  heroSprite.physics = "none";
-  heroSprite.visible = false;
+  if (!heroSprite) {
+    heroSprite = new Sprite(hero.x, hero.y, hero.width, hero.height);
+    heroSprite.physics = "none";
+    heroSprite.visible = false;
+  } else {
+    heroSprite.x = hero.x;
+    heroSprite.y = hero.y;
+  }
 
   boss = {
     x: TILE_SIZE * 95,
@@ -277,8 +282,8 @@ function updateBoss() {
 }
 
 function updateCamera() {
-  const targetX = constrain(hero.x - width * 0.42, 0, WORLD_WIDTH - width);
-  const targetY = constrain(hero.y - height * 0.58, 0, WORLD_HEIGHT - height);
+  const targetX = constrain(hero.x - width * 0.42, 0, Math.max(0, WORLD_WIDTH - width));
+  const targetY = constrain(hero.y - height * 0.58, 0, Math.max(0, WORLD_HEIGHT - height));
   cameraX = lerp(cameraX, targetX, 0.12);
   cameraY = lerp(cameraY, targetY, 0.12);
 }
@@ -458,11 +463,7 @@ function drawHud() {
     forgeButton = null;
   }
 
-  const slotSize = 44;
-  const gap = 5;
-  const totalWidth = slotSize * 9 + gap * 8;
-  const startX = Math.max(8, (width - totalWidth) / 2);
-  const slotY = height - 64;
+  const { slotSize, gap, startX, slotY } = getHotbarLayout();
 
   for (let slot = 0; slot < hotbar.length; slot++) {
     const x = startX + slot * (slotSize + gap);
@@ -487,11 +488,16 @@ function drawHud() {
   fill("#fff");
   textAlign(CENTER, BOTTOM);
   textSize(11);
-  text(
-    "A/D move   W jump   1–9 select   Pickaxe: mine   Blocks: place   Blade: attack",
-    width / 2,
-    slotY - 5
-  );
+  if (width < 560) {
+    text("A/D move   W jump   1–9 select", width / 2, slotY - 20);
+    text("Pickaxe mine   Blocks place   Blade attack", width / 2, slotY - 5);
+  } else {
+    text(
+      "A/D move   W jump   1–9 select   Pickaxe: mine   Blocks: place   Blade: attack",
+      width / 2,
+      slotY - 5
+    );
+  }
 
   if (messageTimer > 0) {
     fill(22, 24, 35, 220);
@@ -554,6 +560,18 @@ function drawPanel(x, y, panelWidth, panelHeight) {
   rect(x, y, panelWidth, panelHeight, 8);
 }
 
+function getHotbarLayout() {
+  const gap = width < 480 ? 3 : 5;
+  const slotSize = Math.min(44, (width - 16 - gap * 8) / 9);
+  const totalWidth = slotSize * 9 + gap * 8;
+  return {
+    slotSize,
+    gap,
+    startX: Math.max(8, (width - totalWidth) / 2),
+    slotY: height - 64
+  };
+}
+
 function drawTitleScreen() {
   fill(9, 14, 26, 170);
   rect(0, 0, width, height);
@@ -608,11 +626,7 @@ function mousePressed() {
     return false;
   }
 
-  const slotSize = 44;
-  const gap = 5;
-  const totalWidth = slotSize * 9 + gap * 8;
-  const startX = Math.max(8, (width - totalWidth) / 2);
-  const slotY = height - 64;
+  const { slotSize, gap, startX, slotY } = getHotbarLayout();
   if (mouseY >= slotY && mouseY <= slotY + slotSize) {
     for (let slot = 0; slot < 9; slot++) {
       const x = startX + slot * (slotSize + gap);
