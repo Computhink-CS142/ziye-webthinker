@@ -355,9 +355,9 @@ function drawOverlay() {
   const heading = gameState === "ready" ? "GEOMETRY DASH" :
     gameState === "won" ? "LEVEL COMPLETE!" : "CRASH!";
   const message = gameState === "ready"
-    ? "Jump over every spike and reach the finish."
+    ? "Dodge spikes, land on neon ledges, and collect gold shards."
     : gameState === "won"
-      ? "Stereo Madness cleared!"
+      ? `Run complete! You collected ${collectedShards.size} of ${SHARD_LAYOUT.length} shards.`
       : "You made it " + Math.floor((progress / LEVEL_LENGTH) * 100) + "% of the way.";
   const action = gameState === "ready"
     ? "PRESS SPACE OR CLICK TO START"
