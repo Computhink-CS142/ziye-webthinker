@@ -192,7 +192,17 @@ function updateHero() {
     hero.y = nextY;
     hero.grounded = false;
   } else {
-    if (hero.velocityY > 0) hero.grounded = true;
+    if (hero.velocityY > 0) {
+      const bottom = nextY + hero.height / 2 - 2;
+      const row = Math.floor(bottom / TILE_SIZE);
+      hero.y = row * TILE_SIZE - hero.height / 2 + 2 - 0.01;
+      hero.grounded = true;
+    } else if (hero.velocityY < 0) {
+      const top = nextY - hero.height / 2 + 2;
+      const row = Math.floor(top / TILE_SIZE);
+      hero.y = (row + 1) * TILE_SIZE + hero.height / 2 - 2 + 0.01;
+      hero.grounded = false;
+    }
     hero.velocityY = 0;
   }
 
