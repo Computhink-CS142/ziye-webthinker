@@ -115,7 +115,7 @@ function resetGame() {
     hasBlade: false
   };
   heroSprite = new Sprite(hero.x, hero.y, hero.width, hero.height);
-  heroSprite.physics = NONE;
+  heroSprite.physics = "none";
   heroSprite.visible = false;
 
   boss = {
