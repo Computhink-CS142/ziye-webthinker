@@ -704,10 +704,13 @@ function placeBlock(type) {
   if (column < 0 || column >= WORLD_COLUMNS || row < 0 || row >= WORLD_ROWS) return;
   const centerX = column * TILE_SIZE + TILE_SIZE / 2;
   const centerY = row * TILE_SIZE + TILE_SIZE / 2;
+  const overlapsHero =
+    Math.abs(centerX - hero.x) < (TILE_SIZE + hero.width) / 2 &&
+    Math.abs(centerY - hero.y) < (TILE_SIZE + hero.height) / 2;
   if (
     terrain[column][row] !== null ||
     dist(hero.x, hero.y, centerX, centerY) > 150 ||
-    heroTouchesSolid(centerX, centerY)
+    overlapsHero
   ) {
     return;
   }
