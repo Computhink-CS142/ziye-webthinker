@@ -10,6 +10,29 @@ const SPIKE_DISTANCES = [
   3260, 3315, 3760, 4220, 4275, 4590, 5030, 5085,
   5480, 5850, 5905, 6280, 6700, 6755, 7120
 ];
+const PLATFORM_LAYOUT = [
+  { distance: 930, width: 150, elevation: 48 },
+  { distance: 1540, width: 126, elevation: 54 },
+  { distance: 2480, width: 176, elevation: 44 },
+  { distance: 3600, width: 150, elevation: 52 },
+  { distance: 4780, width: 176, elevation: 46 },
+  { distance: 5650, width: 142, elevation: 54 },
+  { distance: 6920, width: 180, elevation: 48 }
+];
+const BLOCK_LAYOUT = [
+  { distance: 1880, width: 42, height: 42 },
+  { distance: 3000, width: 42, height: 42 },
+  { distance: 4090, width: 42, height: 42 },
+  { distance: 5200, width: 42, height: 42 },
+  { distance: 6140, width: 42, height: 42 }
+];
+const SHARD_LAYOUT = [
+  { distance: 970, elevation: 105 },
+  { distance: 2490, elevation: 104 },
+  { distance: 4810, elevation: 106 },
+  { distance: 5670, elevation: 112 },
+  { distance: 6930, elevation: 106 }
+];
 
 let player;
 let floorBody;
@@ -18,6 +41,8 @@ let progress = 0;
 let groundY;
 let playerX;
 let grounded = false;
+let previousPlayerBottom;
+let collectedShards = new Set();
 
 function setup() {
   new Canvas(windowWidth, windowHeight);
@@ -39,6 +64,7 @@ function setup() {
   player.bounciness = 0;
   player.friction = 0;
   player.rotationLock = true;
+  previousPlayerBottom = groundY;
 }
 
 function draw() {
@@ -62,13 +88,53 @@ function updateGame() {
   progress = Math.min(LEVEL_LENGTH, progress + RUN_SPEED * frameScale);
 
   player.x = playerX;
-  if (player.y + PLAYER_SIZE / 2 >= groundY - 1 && player.vel.y >= 0) {
-    player.y = groundY - PLAYER_SIZE / 2;
-    player.vel.y = 0;
-    grounded = true;
-  } else {
-    grounded = false;
+  grounded = false;
+  if (player.vel.y >= 0) {
+    let landingTop = Infinity;
+    const playerBottom = player.y + PLAYER_SIZE / 2;
+
+    for (const platform of PLATFORM_LAYOUT) {
+      const platformX = playerX + platform.distance - progress;
+      const platformTop = groundY - platform.elevation;
+      const overlapsHorizontally =
+        playerX + PLAYER_SIZE / 2 > platformX - platform.width / 2 &&
+        playerX - PLAYER_SIZE / 2 < platformX + platform.width / 2;
+      const crossedPlatformTop =
+        previousPlayerBottom <= platformTop &&
+        playerBottom >= platformTop;
+
+      if (overlapsHorizontally && crossedPlatformTop) {
+        landingTop = Math.min(landingTop, platformTop);
+      }
+    }
+
+    for (const block of BLOCK_LAYOUT) {
+      const blockX = playerX + block.distance - progress;
+      const blockTop = groundY - block.height;
+      const overlapsHorizontally =
+        playerX + PLAYER_SIZE / 2 > blockX - block.width / 2 &&
+        playerX - PLAYER_SIZE / 2 < blockX + block.width / 2;
+      const crossedBlockTop =
+        previousPlayerBottom <= blockTop &&
+        playerBottom >= blockTop;
+
+      if (overlapsHorizontally && crossedBlockTop) {
+        landingTop = Math.min(landingTop, blockTop);
+      }
+    }
+
+    if (landingTop !== Infinity) {
+      player.y = landingTop - PLAYER_SIZE / 2;
+      player.vel.y = 0;
+      grounded = true;
+    } else if (playerBottom >= groundY - 1) {
+      player.y = groundY - PLAYER_SIZE / 2;
+      player.vel.y = 0;
+      grounded = true;
+    }
   }
+
+  previousPlayerBottom = player.y + PLAYER_SIZE / 2;
 
   if (grounded && keyIsDown(32)) {
     jump();
@@ -83,14 +149,44 @@ function updateGame() {
     const overlapsHorizontally =
       player.x + PLAYER_SIZE / 2 > spikeX - SPIKE_WIDTH / 2 &&
       player.x - PLAYER_SIZE / 2 < spikeX + SPIKE_WIDTH / 2;
-    const overlapsVertically =
-      player.y + PLAYER_SIZE / 2 > groundY - SPIKE_HEIGHT;
+    const overlapsVertically = player.y + PLAYER_SIZE / 2 > groundY - SPIKE_HEIGHT;
 
     if (overlapsHorizontally && overlapsVertically) {
       gameState = "lost";
       return;
     }
   }
+
+  for (const block of BLOCK_LAYOUT) {
+    const blockX = playerX + block.distance - progress;
+    const blockTop = groundY - block.height;
+    const overlapsHorizontally =
+      playerX + PLAYER_SIZE / 2 > blockX - block.width / 2 &&
+      playerX - PLAYER_SIZE / 2 < blockX + block.width / 2;
+    const overlapsVertically =
+      player.y + PLAYER_SIZE / 2 > blockTop + 1 &&
+      player.y - PLAYER_SIZE / 2 < groundY;
+
+    if (overlapsHorizontally && overlapsVertically) {
+      gameState = "lost";
+      return;
+    }
+  }
+
+  SHARD_LAYOUT.forEach((shard, index) => {
+    if (collectedShards.has(index)) {
+      return;
+    }
+
+    const shardX = playerX + shard.distance - progress;
+    const shardY = groundY - shard.elevation;
+    if (
+      Math.abs(player.x - shardX) < PLAYER_SIZE / 2 + 14 &&
+      Math.abs(player.y - shardY) < PLAYER_SIZE / 2 + 14
+    ) {
+      collectedShards.add(index);
+    }
+  });
 
   if (progress >= LEVEL_LENGTH) {
     gameState = "won";
@@ -124,6 +220,45 @@ function drawLevel() {
   line(0, groundY, width, groundY);
   noStroke();
 
+  for (const platform of PLATFORM_LAYOUT) {
+    const platformX = playerX + platform.distance - progress;
+    if (
+      platformX < -platform.width ||
+      platformX > width + platform.width
+    ) {
+      continue;
+    }
+
+    const platformTop = groundY - platform.elevation;
+    fill("#393762");
+    stroke("#8b8aff");
+    strokeWeight(2);
+    rectMode(CENTER);
+    rect(platformX, platformTop + 8, platform.width, 16, 3);
+    noStroke();
+    fill("#c5c2ff");
+    rect(platformX, platformTop, platform.width, 4, 2);
+    rectMode(CORNER);
+  }
+
+  for (const block of BLOCK_LAYOUT) {
+    const blockX = playerX + block.distance - progress;
+    if (blockX < -block.width || blockX > width + block.width) {
+      continue;
+    }
+
+    const blockTop = groundY - block.height;
+    rectMode(CENTER);
+    fill("#584f9c");
+    stroke("#b5aaff");
+    strokeWeight(2);
+    rect(blockX, blockTop + block.height / 2, block.width, block.height, 3);
+    noStroke();
+    fill("#8078c4");
+    rect(blockX, blockTop + block.height / 2, block.width - 12, 4);
+    rectMode(CORNER);
+  }
+
   for (const distance of SPIKE_DISTANCES) {
     const spikeX = playerX + distance - progress;
     if (spikeX < -SPIKE_WIDTH || spikeX > width + SPIKE_WIDTH) {
@@ -143,6 +278,41 @@ function drawLevel() {
     );
   }
   noStroke();
+
+  SHARD_LAYOUT.forEach((shard, index) => {
+    if (collectedShards.has(index)) {
+      return;
+    }
+
+    const shardX = playerX + shard.distance - progress;
+    if (shardX < -24 || shardX > width + 24) {
+      return;
+    }
+
+    const shardY = groundY - shard.elevation;
+    push();
+    translate(shardX, shardY);
+    rotate(45);
+    fill("#ffd966");
+    stroke("#fff2bd");
+    strokeWeight(2);
+    rectMode(CENTER);
+    rect(0, 0, 20, 20, 3);
+    pop();
+    rectMode(CORNER);
+  });
+
+  const finishX = playerX + LEVEL_LENGTH - progress;
+  if (finishX > -40 && finishX < width + 40) {
+    noFill();
+    stroke("#ffd966");
+    strokeWeight(5);
+    ellipse(finishX, groundY - 52, 48, 96);
+    stroke("#fff2bd");
+    strokeWeight(2);
+    ellipse(finishX, groundY - 52, 28, 76);
+    noStroke();
+  }
 
   push();
   translate(player.x, player.y);
@@ -175,6 +345,10 @@ function drawHud() {
   fill("#d7d9ff");
   textSize(12);
   text(`${percent}%`, width / 2, 64);
+
+  textAlign(RIGHT, TOP);
+  textSize(14);
+  text(`SHARDS ${collectedShards.size}/${SHARD_LAYOUT.length}`, width - 18, 20);
 }
 
 function drawOverlay() {
@@ -222,6 +396,8 @@ function startOrRestart() {
   player.y = groundY - PLAYER_SIZE / 2;
   player.vel.x = 0;
   player.vel.y = 0;
+  previousPlayerBottom = groundY;
+  collectedShards = new Set();
   grounded = true;
   gameState = "playing";
 }
@@ -260,4 +436,5 @@ function windowResized() {
     player.vel.y = 0;
     grounded = true;
   }
+  previousPlayerBottom = player.y + PLAYER_SIZE / 2;
 }
