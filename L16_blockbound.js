@@ -440,12 +440,16 @@ function drawHud() {
   text(hero.hasBlade ? "Blade forged — reach the rift!" : "Gather ore, then forge a blade.", 27, 94);
 
   if (boss.state !== "sleeping" && boss.state !== "defeated") {
-    drawPanel(width - 236, 14, 222, 58);
+    const compact = width < 540;
+    const panelX = compact ? 14 : width - 236;
+    const panelY = compact ? 130 : 14;
+    const panelWidth = compact ? width - 28 : 222;
+    drawPanel(panelX, panelY, panelWidth, 58);
     fill("#fff");
     textAlign(CENTER, TOP);
     textSize(12);
-    text("RIFT WYRM", width - 125, 23);
-    drawBar(width - 217, 43, 184, 12, boss.health / 100, "#d46bea");
+    text("RIFT WYRM", panelX + panelWidth / 2, panelY + 9);
+    drawBar(panelX + 19, panelY + 34, panelWidth - 38, 12, boss.health / 100, "#d46bea");
   }
 
   if (!hero.hasBlade && hero.iron >= 5 && hero.crystal >= 3) {
@@ -501,11 +505,13 @@ function drawHud() {
 
   if (messageTimer > 0) {
     fill(22, 24, 35, 220);
-    rect(width / 2 - 240, 132, 480, 34, 6);
+    const messageWidth = Math.min(480, width - 28);
+    const messageY = boss.state !== "sleeping" && width < 540 ? 194 : 132;
+    rect(width / 2 - messageWidth / 2, messageY, messageWidth, 34, 6);
     fill("#fff1b8");
     textAlign(CENTER, CENTER);
-    textSize(12);
-    text(message, width / 2, 149);
+    textSize(width < 420 ? 9 : 12);
+    text(message, width / 2, messageY + 17);
   }
 }
 
@@ -575,16 +581,25 @@ function getHotbarLayout() {
 function drawTitleScreen() {
   fill(9, 14, 26, 170);
   rect(0, 0, width, height);
-  drawPanel(width / 2 - 255, height / 2 - 160, 510, 320);
+  const panelWidth = Math.min(510, width - 24);
+  const left = width / 2 - panelWidth / 2;
+  drawPanel(left, height / 2 - 160, panelWidth, 320);
   fill("#f4e3a1");
   textAlign(CENTER, CENTER);
-  textSize(32);
+  textSize(width < 560 ? 26 : 32);
   text("RIFTBOUND", width / 2, height / 2 - 110);
   fill("#fff");
-  textSize(14);
-  text("Mine the glowing surface deposits. Gather 5 iron and 3 crystals.", width / 2, height / 2 - 59);
-  text("Click the forge to craft your blade, then defeat the Rift Wyrm.", width / 2, height / 2 - 34);
-  text("A / D move     W jump     1–9 choose     Click to mine, place, or strike", width / 2, height / 2 + 2);
+  textSize(width < 560 ? 12 : 14);
+  if (width < 560) {
+    text("Mine 5 iron and 3 crystals.", width / 2, height / 2 - 64);
+    text("Forge a blade, then defeat the Wyrm.", width / 2, height / 2 - 38);
+    text("A/D move   W jump   1–9 select", width / 2, height / 2 - 4);
+    text("Click: mine, place, or attack", width / 2, height / 2 + 19);
+  } else {
+    text("Mine the glowing surface deposits. Gather 5 iron and 3 crystals.", width / 2, height / 2 - 59);
+    text("Click the forge to craft your blade, then defeat the Rift Wyrm.", width / 2, height / 2 - 34);
+    text("A / D move     W jump     1–9 choose     Click to mine, place, or strike", width / 2, height / 2 + 2);
+  }
   fill("#e1a943");
   rect(width / 2 - 95, height / 2 + 52, 190, 48, 8);
   fill("#221a27");
