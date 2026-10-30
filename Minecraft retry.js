@@ -108,7 +108,7 @@ function resetGame() {
       { type: "pickaxe", count: 1 },
       { type: "dirt", count: 12 },
       { type: "wood", count: 4 },
-      { type: "torch", count: 6 },
+      { type: "stone", count: 6 },
       null, null, null, null, null
     ]
   };
@@ -145,7 +145,7 @@ function resetGame() {
   cameraX = 0;
   cameraY = 0;
   selectedSlot = 0;
-  dayClock = 0;
+  dayClock = 1800;
   hurtTimer = 0;
   swingTimer = 0;
   toast = "";
@@ -192,7 +192,7 @@ function update() {
 }
 
 function isNight() {
-  return dayClock > 1900 && dayClock < 3100;
+  return dayClock > 2700 || dayClock < 900;
 }
 
 function updatePlayer() {
@@ -681,8 +681,16 @@ function playerHasSword() {
 }
 
 function insertItem(type, amount = 1) {
-  let remaining = amount;
   const stackLimit = type === "pickaxe" || type === "sword" ? 1 : STACK_LIMIT;
+  const stacked = player.inventory.reduce(
+    (total, item) => total + (item && item.type === type ? item.count : 0),
+    0
+  );
+  const emptySlots = player.inventory.filter((item) => item === null).length;
+  const capacity = Math.max(0, stackLimit - stacked) + emptySlots * stackLimit;
+  if (capacity < amount) return false;
+
+  let remaining = amount;
   for (const item of player.inventory) {
     if (item && item.type === type && item.count < stackLimit) {
       const moved = Math.min(stackLimit - item.count, remaining);
@@ -796,7 +804,9 @@ function attackTarget() {
       mob.x += player.facing * 12;
       if (mob.health <= 0) {
         mob.alive = false;
-        insertItem("crystal", 1);
+        if (!insertItem("crystal", 1)) {
+          showMessage("Inventory full. The slime's crystal could not be collected.");
+        }
       }
       hit = true;
     }
